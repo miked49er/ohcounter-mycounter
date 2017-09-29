@@ -1,0 +1,12 @@
+body {
+    @include clearfix;
+    font-family: $font-secondary;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 110%;
+} // body
+
+#{headings()} {
+  font-family: $font-primary;
+} // headings
+
