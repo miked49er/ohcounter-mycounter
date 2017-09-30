@@ -22,3 +22,10 @@ body {
   @include container;
 } // body
 
+.content {
+    margin-top: 50px;
+} // content
+
+.hide {
+    display: none !important;
+} // hide

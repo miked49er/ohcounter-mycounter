@@ -1,0 +1,30 @@
+.slide-in {
+    z-index: 10;
+    position: absolute;
+    overflow: hidden;
+    transition: all .5s ease;
+} // slide-in
+
+.slide-in.from-left {
+    left: 0;
+} // slide-in.from-left
+
+.slide-in.from-right {
+    right: 0;
+} // slide-in.from-right
+
+.slide-in-content {
+    transition: all .5s ease;
+} // slide-in-content
+
+.slide-in.from-left {
+    transform: translateX(-150%);
+} // from-left
+
+.slide-in.from-right {
+    transform: translateX(150%);
+} // from-right
+
+.slide-in.show {
+    transform: translateX(0);
+} // show

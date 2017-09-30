@@ -8,5 +8,11 @@ body {
 
 #{headings()} {
   font-family: $font-primary;
+  font-weight: bold;
 } // headings
 
+h1 {
+    display: block;
+    line-height: 50px;
+    font-size: 1.4rem;
+} // h1

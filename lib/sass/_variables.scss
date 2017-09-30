@@ -1,14 +1,34 @@
-$font-primary: Sans-Serif;
-$font-secondary: Sans-Serif;
+@mixin font($familyName, $fontName, $dir, $weight, $style) {
+  @font-face {
+    font-family: $familyName;
+    src: url('fonts/' + $dir + '/' + $fontName + '.woff') format('woff'),
+         url('fonts/' + $dir + '/' + $fontName + '.woff2') format('woff2'),
+         url('fonts/' + $dir + '/' + $fontName + '.ttf') format('truetype');
+    font-weight: $weight;
+    font-size: $style;
+  }
+}
+
+@include font('Exo 2', 'Exo2-Thin', 'Exo_2', 100, 'thin');
+@include font('Exo 2', 'Exo2-Bold', 'Exo_2', 700, 'bold');
+@include font('Marvel', 'Marvel-Regular', 'Marvel', 400, 'regular');
+
+$font-primary: 'Exo 2', Sans-Serif;
+$font-secondary: Marvel, Sans-Serif;
 
 $layout: gutter(4);
 
-$default-transition-property: all;
+$primary: #a40cbe;
+$secondary: #26e454;
+$tertiary: #fff;
+
+$blur: rgba(#000,.75);
+
+/* $default-transition-property: all;
 $default-transition-duration: 1s;
 $default-transition-timing-function: ease-in-out;
-
+ */
 $default-box-shadow-color: #333333;
 $default-box-shadow-h-offset: 1px;
 $default-box-shadow-v-offset: 2px;
 $default-box-shadow-blur: 5px;
-
