@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.min.js" charset="utf-8"></script>
-    <title>Document</title>
+    <title>Oh Counter, My Counter</title>
 </head>
 <body>
+
+    <header>
+        <img onclick="toggleSlide('menu')" class="menu-button" src="images/icons/ic_menu_48px.svg" alt="Menu">
+    </header>
+
+    <div id="menu-active" class="hide" onclick="toggleSlide('menu')"></div>
+    <div id="menu" class="slide-in from-left">
+        <h1 class="logo">Oh Counter, My Counter</h1>
+    </div>
+
+    <div class="content"></div>
 
 </body>
 </html>
