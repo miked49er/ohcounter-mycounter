@@ -1,0 +1,223 @@
+/* line 5, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Exo 2";
+  src: url("fonts/Exo_2/Exo2-Thin.woff") format("woff"), url("fonts/Exo_2/Exo2-Thin.woff2") format("woff2"), url("fonts/Exo_2/Exo2-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-size: "thin";
+}
+@font-face {
+  font-family: "Exo 2";
+  src: url("fonts/Exo_2/Exo2-Bold.woff") format("woff"), url("fonts/Exo_2/Exo2-Bold.woff2") format("woff2"), url("fonts/Exo_2/Exo2-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-size: "bold";
+}
+@font-face {
+  font-family: "Marvel";
+  src: url("fonts/Marvel/Marvel-Regular.woff") format("woff"), url("fonts/Marvel/Marvel-Regular.woff2") format("woff2"), url("fonts/Marvel/Marvel-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-size: "regular";
+}
+/* $default-transition-property: all;
+$default-transition-duration: 1s;
+$default-transition-timing-function: ease-in-out;
+ */
+/* line 1, ../lib/sass/_base.scss */
+body {
+  overflow: hidden;
+  *zoom: 1;
+  font-family: Marvel, Sans-Serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 110%;
+}
+
+/* line 9, ../lib/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Exo 2", Sans-Serif;
+  font-weight: bold;
+}
+
+/* line 14, ../lib/sass/_base.scss */
+h1 {
+  display: block;
+  line-height: 50px;
+  font-size: 1.4rem;
+}
+
+/* line 21, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 21, ../lib/sass/_layout.scss */
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 25, ../lib/sass/_layout.scss */
+.content {
+  margin-top: 50px;
+}
+
+/* line 29, ../lib/sass/_layout.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 1, ../lib/sass/_animations.scss */
+.slide-in {
+  z-index: 10;
+  position: absolute;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+/* line 8, ../lib/sass/_animations.scss */
+.slide-in.from-left {
+  left: 0;
+}
+
+/* line 12, ../lib/sass/_animations.scss */
+.slide-in.from-right {
+  right: 0;
+}
+
+/* line 16, ../lib/sass/_animations.scss */
+.slide-in-content {
+  transition: all .5s ease;
+}
+
+/* line 20, ../lib/sass/_animations.scss */
+.slide-in.from-left {
+  transform: translateX(-150%);
+}
+
+/* line 24, ../lib/sass/_animations.scss */
+.slide-in.from-right {
+  transform: translateX(150%);
+}
+
+/* line 28, ../lib/sass/_animations.scss */
+.slide-in.show {
+  transform: translateX(0);
+}
+
+/* line 1, ../lib/sass/_nav.scss */
+header {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #a40cbe;
+  z-index: 10;
+}
+/* line 11, ../lib/sass/_nav.scss */
+header img {
+  margin: 0 5px;
+}
+
+/* line 16, ../lib/sass/_nav.scss */
+#menu {
+  -moz-box-shadow: 1px 2px 5px #333333;
+  -webkit-box-shadow: 1px 2px 5px #333333;
+  box-shadow: 1px 2px 5px #333333;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  width: 90%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+/* line 27, ../lib/sass/_nav.scss */
+#menu-active {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+}
