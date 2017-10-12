@@ -10,7 +10,10 @@
 <body>
 
     <header>
-        <img onclick="toggleSlide('menu')" class="menu-button" src="images/icons/ic_menu_48px.svg" alt="Menu">
+        <svg onclick="toggleSlide('menu')" class="menu-button" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+            <path d="M0 0h48v48H0z" fill="none"/>
+            <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"/>
+        </svg>
     </header>
 
     <div id="menu-active" class="hide" onclick="toggleSlide('menu')"></div>
@@ -19,6 +22,10 @@
     </div>
 
     <div class="content"></div>
+
+    <div id="fab" class="fab">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+    </div>
 
 </body>
 </html>
