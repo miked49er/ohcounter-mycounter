@@ -18,15 +18,39 @@ $font-secondary: Marvel, Sans-Serif;
 
 $layout: gutter(4);
 
+// Colors =====================================
+
 $primary: #a40cbe;
 $secondary: #26e454;
 $tertiary: #fff;
 
-$primaryTxt: #fff;
-$secondaryTxt: #000;
-$tertiaryTxt: #000;
+$primaryContent: #fff;
+$secondaryContent: #000;
+$tertiaryContent: #000;
+
+$primaryHover: lighten($primary, 20);
+$secondaryHover: lighten($secondary, 20);
+$tertiaryHover: lighten($tertiary, 20);
+
+$primaryHoverContent: #fff;
+$secondaryHoverContent: #000;
+$tertiaryHoverContent: #000;
+
+$primaryActive: lighten($primary, 20);
+$secondaryActive: lighten($secondary, 20);
+$tertiaryActive: lighten($tertiary, 20);
+
+$primaryActiveContent: #fff;
+$secondaryActiveContent: #000;
+$tertiaryActiveContent: #000;
 
 $blur: rgba(#000,.75);
+$overlay: #fff;
+
+// Sizes =======================================
+
+$fab: 40px;
+$fab-mini: $fab / 2;
 
 /* $default-transition-property: all;
 $default-transition-duration: 1s;
