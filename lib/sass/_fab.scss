@@ -1,4 +1,5 @@
 .fab {
+  @include transition;
   @include box-shadow;
   display: flex;
   position: absolute;
@@ -11,9 +12,37 @@
   align-items: center;
   vertical-align: middle;
 
+  // .circle {
+  //   background-color: $primaryActive;
+  // } // circle
+
   svg {
-    width: 40px;
-    height: 40px;
-    fill: $primaryTxt;
+    width: $fab;
+    height: $fab;
+    fill: $primaryContent;
   } // svg
+
+  &:hover {
+    // background-color: $primaryHover;
+
+    svg {
+      fill: $primaryHoverContent;
+    } // svg
+  } // fab:hover
+
+  &:active {
+    // background-color: $primaryActive;
+
+    svg {
+      fill: $primaryActiveContent;
+    } // svg
+  } // fab:active
 } // fab
+
+.fab-mini {
+
+  svg {
+    width: $fab-mini;
+    height: $fab-mini;
+  } // svg
+} // fab-mini
