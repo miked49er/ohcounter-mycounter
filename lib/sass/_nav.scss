@@ -10,7 +10,7 @@ header {
 
     .menu-button {
         margin: 0 5px;
-        fill: $primaryTxt;
+        fill: $primaryContent;
     } // .menu-button
 } // header
 
@@ -41,5 +41,6 @@ header {
   display: block;
   padding: 10px 15px;
   background-color: $primary;
-  color: $primaryTxt;
+  color: $primaryContent;
+  margin: 0;
 } // logo
