@@ -1,48 +1,52 @@
 .fab {
-  @include transition;
-  @include box-shadow;
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: $primary;
-  border-radius: 100px;
-  padding: 5px;
-  margin: 15px;
-  align-items: center;
-  vertical-align: middle;
-
-  // .circle {
-  //   background-color: $primaryActive;
-  // } // circle
+  @extend %fab;
+  padding: $fab-padding;
+  margin: $fab-margin;
 
   svg {
     width: $fab;
     height: $fab;
     fill: $primaryContent;
   } // svg
-
-  &:hover {
-    // background-color: $primaryHover;
-
-    svg {
-      fill: $primaryHoverContent;
-    } // svg
-  } // fab:hover
-
-  &:active {
-    // background-color: $primaryActive;
-
-    svg {
-      fill: $primaryActiveContent;
-    } // svg
-  } // fab:active
 } // fab
 
 .fab-mini {
+  @extend %fab;
+  max-width: $fab-mini + $fab-mini-padding * 2;
+  // width: $fab-mini + $fab-mini-padding * 2;
+  padding: $fab-mini-padding;
+  margin: $fab-mini-margin;
 
   svg {
     width: $fab-mini;
     height: $fab-mini;
+    fill: $primaryContent;
   } // svg
+
+  .tooltiptext {
+    visibility: visible;
+  } // tooltiptext
 } // fab-mini
+
+.fab-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  label {
+    cursor: pointer;
+    position: relative;
+    height: $fab-mini;
+  } // label
+
+  input[type="radio"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+  } // input[type="radio"]
+
+  .fab-mini + .fab-mini {
+    margin-top: 15px;
+  } // fab-mini + fab-mini
+} // fab-menu
