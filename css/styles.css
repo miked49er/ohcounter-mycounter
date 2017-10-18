@@ -105,15 +105,16 @@ body {
   font-size: 1.2rem;
   font-weight: normal;
   line-height: 110%;
+  z-index: 1;
 }
 
-/* line 9, ../lib/sass/_base.scss */
+/* line 10, ../lib/sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Exo 2", Sans-Serif;
   font-weight: bold;
 }
 
-/* line 14, ../lib/sass/_base.scss */
+/* line 15, ../lib/sass/_base.scss */
 h1 {
   display: block;
   line-height: 50px;
