@@ -81,6 +81,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 400;
   font-size: "regular";
 }
+/*
+ 0 -  9: Normal
+10 - 19: Tooltips
+20 - 29: Fab Menu
+30 - 39: Hamburger Menu
+40 - 49:
+50 - 59:
+60 - 69:
+70 - 71:
+80 - 89:
+90 - 99: Animations
+*/
 /* $default-transition-property: all;
 $default-transition-duration: 1s;
 $default-transition-timing-function: ease-in-out;
@@ -153,49 +165,63 @@ body:after {
   border-radius: 100px;
   align-items: center;
   vertical-align: middle;
-  z-index: 10;
+  z-index: 20;
   cursor: pointer;
+}
+
+/* line 14, ../lib/sass/_partials.scss */
+#menu-active, #fab-menu-items-active {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100vh;
 }
 
 /* line 1, ../lib/sass/_animations.scss */
 .slide-in {
-  z-index: 10;
   position: absolute;
   overflow: hidden;
   transition: all .5s ease;
 }
 
-/* line 8, ../lib/sass/_animations.scss */
+/* line 7, ../lib/sass/_animations.scss */
 .slide-in.from-left {
   left: 0;
 }
 
-/* line 12, ../lib/sass/_animations.scss */
+/* line 11, ../lib/sass/_animations.scss */
 .slide-in.from-right {
   right: 0;
 }
 
-/* line 16, ../lib/sass/_animations.scss */
+/* line 15, ../lib/sass/_animations.scss */
 .slide-in-content {
   transition: all .5s ease;
 }
 
-/* line 20, ../lib/sass/_animations.scss */
+/* line 19, ../lib/sass/_animations.scss */
 .slide-in.from-left {
   transform: translateX(-150%);
 }
 
-/* line 24, ../lib/sass/_animations.scss */
+/* line 23, ../lib/sass/_animations.scss */
 .slide-in.from-right {
   transform: translateX(150%);
 }
 
-/* line 28, ../lib/sass/_animations.scss */
+/* line 27, ../lib/sass/_animations.scss */
 .slide-in.show {
   transform: translateX(0);
 }
 
-/* line 32, ../lib/sass/_animations.scss */
+/* line 31, ../lib/sass/_animations.scss */
 .circle {
   position: absolute;
   top: 0;
@@ -204,12 +230,12 @@ body:after {
   height: 100%;
   border-radius: 100%;
   transform: scale(0);
-  z-index: 100;
+  z-index: 90;
   opacity: 0;
   background-color: #fff;
 }
 
-/* line 45, ../lib/sass/_animations.scss */
+/* line 44, ../lib/sass/_animations.scss */
 .circle.opened {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -220,13 +246,13 @@ body:after {
   opacity: .3;
 }
 
-/* line 52, ../lib/sass/_animations.scss */
+/* line 51, ../lib/sass/_animations.scss */
 .spinLeft {
   transform: rotate(-135deg);
   transition-duration: .5s;
 }
 
-/* line 57, ../lib/sass/_animations.scss */
+/* line 56, ../lib/sass/_animations.scss */
 .spinRight {
   transform: rotate(0deg);
   transition-duration: .5s;
@@ -293,7 +319,7 @@ header {
   width: 100%;
   height: 50px;
   background-color: #a40cbe;
-  z-index: 10;
+  z-index: 5;
 }
 /* line 11, ../lib/sass/_nav.scss */
 header .menu-button {
@@ -309,29 +335,19 @@ header .menu-button {
   display: block;
   position: absolute;
   top: 0;
-  z-index: 20;
+  z-index: 35;
   width: 90%;
   height: 100vh;
-  background-color: #000;
+  background-color: #fff;
 }
 
 /* line 28, ../lib/sass/_nav.scss */
 #menu-active {
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 15;
   background-color: rgba(0, 0, 0, 0.75);
-  width: 100%;
-  height: 100vh;
+  z-index: 31;
 }
 
-/* line 40, ../lib/sass/_nav.scss */
+/* line 34, ../lib/sass/_nav.scss */
 .logo {
   display: block;
   padding: 10px 15px;
@@ -391,4 +407,12 @@ header .menu-button {
 /* line 49, ../lib/sass/_fab.scss */
 .fab-menu .fab-mini + .fab-mini {
   margin-top: 15px;
+}
+/* line 53, ../lib/sass/_fab.scss */
+.fab-menu .fab-menu-items {
+  display: none;
+}
+/* line 57, ../lib/sass/_fab.scss */
+.fab-menu .fab-menu-items.show {
+  display: block;
 }
