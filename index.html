@@ -10,13 +10,12 @@
 <body>
 
     <header>
-        <svg onclick="toggleSlide('menu')" class="menu-button" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+        <svg onclick="toggleHamMenu()" class="menu-button" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
             <path d="M0 0h48v48H0z" fill="none"/>
             <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"/>
         </svg>
     </header>
 
-    <div id="menu-active" class="hide" onclick="toggleSlide('menu')"></div>
     <div id="menu" class="slide-in from-left">
         <h1 class="logo">Oh Counter, My Counter</h1>
     </div>
@@ -26,44 +25,49 @@
     <div id="templates"></div>
 
     <div class="fab-menu" id="fab-menu">
-      <div class="fab-mini tooltip">
-        <label for="option1">
-          <span class="tooltiptext tooltip-left">Option 1</span>
-          <div class="circle"></div>
-          <input type="radio" id="option1" name="fab-menu" value="option1"/>
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
-        </label>
-      </div>
-      <div class="fab-mini tooltip">
-        <label for="option2">
-          <span class="tooltiptext tooltip-left">Option 2</span>
-          <div class="circle"></div>
-          <input type="radio" id="option2" name="fab-menu" value="option1"/>
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
-        </label>
-      </div>
-      <div class="fab-mini tooltip">
-        <label for="option3">
-          <span class="tooltiptext tooltip-left">Option 3</span>
-          <div class="circle"></div>
-          <input type="radio" id="option3" name="fab-menu" value="option1"/>
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
-        </label>
-      </div>
-      <div class="fab-mini tooltip">
-        <label for="option4">
-          <span class="tooltiptext tooltip-left">Option 4</span>
-          <div class="circle"></div>
-          <input type="radio" id="option4" name="fab-menu" value="option1"/>
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
-        </label>
+      <div id="fab-menu-items" class="fab-menu-items">
+        <div class="fab-mini tooltip">
+          <label for="option1">
+            <span class="tooltiptext tooltip-left">Option 1</span>
+            <div class="circle"></div>
+            <input type="radio" id="option1" name="fab-menu" value="option1"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+          </label>
+        </div>
+        <div class="fab-mini tooltip">
+          <label for="option2">
+            <span class="tooltiptext tooltip-left">Option 2</span>
+            <div class="circle"></div>
+            <input type="radio" id="option2" name="fab-menu" value="option1"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+          </label>
+        </div>
+        <div class="fab-mini tooltip">
+          <label for="option3">
+            <span class="tooltiptext tooltip-left">Option 3</span>
+            <div class="circle"></div>
+            <input type="radio" id="option3" name="fab-menu" value="option1"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+          </label>
+        </div>
+        <div class="fab-mini tooltip">
+          <label for="option4">
+            <span class="tooltiptext tooltip-left">Option 4</span>
+            <div class="circle"></div>
+            <input type="radio" id="option4" name="fab-menu" value="option1"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
+          </label>
+        </div>
       </div>
 
-      <div id="fab" class="fab" onclick="revealCircle(this); rotateIcon(this);">
+      <div id="fab" class="fab" onclick="toggleFabMenu(); revealCircle(this);">
         <div class="circle"></div>
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"/></svg>
       </div>
     </div>
+
+    <div id="menu-active" class="hide" onclick="toggleHamMenu()"></div>
+    <div id="fab-menu-items-active" class="hide" onclick="toggleFabMenu()"></div>
 
 </body>
 </html>
