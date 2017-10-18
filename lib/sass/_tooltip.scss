@@ -12,7 +12,7 @@
 
   /* Position the tooltip */
   position: absolute;
-  z-index: 10;
+  z-index: $z-tooltip;
 } // tooltip tooltiptext
 
 .tooltip:hover .tooltiptext {

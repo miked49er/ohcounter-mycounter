@@ -6,7 +6,7 @@ header {
     width: 100%;
     height: 50px;
     background-color: $primary;
-    z-index: 10;
+    z-index: $z-toolbar;
 
     .menu-button {
         margin: 0 5px;
@@ -19,22 +19,16 @@ header {
     display: block;
     position: absolute;
     top: 0;
-    z-index: 20;
+    z-index: $z-hamburger-menu;
     width: 90%;
     height: 100vh;
     background-color: $tertiary;
 } // menu
 
 #menu-active {
-    @include transition;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 15;
+    @extend %activeToggle;
     background-color: $blur;
-    width: 100%;
-    height: 100vh;
+    z-index: $z-hamburger-blur;
 } // menu-active
 
 .logo {

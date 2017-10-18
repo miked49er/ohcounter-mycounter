@@ -18,15 +18,47 @@ $font-secondary: Marvel, Sans-Serif;
 
 $layout: gutter(4);
 
+// Z-Index ====================================
+/*
+ 0 -  9: Normal
+10 - 19: Tooltips
+20 - 29: Fab Menu
+30 - 39: Hamburger Menu
+40 - 49:
+50 - 59:
+60 - 69:
+70 - 71:
+80 - 89:
+90 - 99: Animations
+*/
+
+// Normal
+$z-base: 1;
+$z-toolbar: 5;
+$z-content-cover: 9;
+
+// Tooltips
+$z-tooltip: 10;
+
+// Fab Menu
+$z-fab-menu: 20;
+
+// Hamburger Menu
+$z-hamburger-blur: 31;
+$z-hamburger-menu: 35;
+
+// Animations
+$z-animations: 90;
+
 // Colors =====================================
 
 $primary: #a40cbe;
 $secondary: #26e454;
-$tertiary: #000;
+$tertiary: #fff;
 
 $primaryContent: #fff;
 $secondaryContent: #000;
-$tertiaryContent: #fff;
+$tertiaryContent: #000;
 
 $primaryHover: lighten($primary, 20);
 $secondaryHover: lighten($secondary, 20);

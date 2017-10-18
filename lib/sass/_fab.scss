@@ -49,4 +49,16 @@
   .fab-mini + .fab-mini {
     margin-top: 15px;
   } // fab-mini + fab-mini
+
+  .fab-menu-items {
+    display: none;
+  } // fab-menu-items
+
+  .fab-menu-items.show {
+    display: block;
+  } // fab-menu-items
 } // fab-menu
+
+#fab-menu-items-active {
+  @extend %activeToggle;
+} // fab-menu-items-active

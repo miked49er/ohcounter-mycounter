@@ -1,5 +1,4 @@
 .slide-in {
-    z-index: 10;
     position: absolute;
     overflow: hidden;
     transition: all .5s ease;
@@ -37,7 +36,7 @@
   height: 100%;
   border-radius: 100%;
   transform: scale(0);
-  z-index: 100;
+  z-index: $z-animations;
   opacity: 0;
   background-color: $overlay;
 } // circle
