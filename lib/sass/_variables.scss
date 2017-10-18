@@ -22,11 +22,11 @@ $layout: gutter(4);
 
 $primary: #a40cbe;
 $secondary: #26e454;
-$tertiary: #fff;
+$tertiary: #000;
 
 $primaryContent: #fff;
 $secondaryContent: #000;
-$tertiaryContent: #000;
+$tertiaryContent: #fff;
 
 $primaryHover: lighten($primary, 20);
 $secondaryHover: lighten($secondary, 20);
@@ -46,11 +46,25 @@ $tertiaryActiveContent: #000;
 
 $blur: rgba(#000,.75);
 $overlay: #fff;
+$tooltip-color: rgba(#2f2f2f, 0.8);
+$tooltip-text: #fff;
 
 // Sizes =======================================
 
+// Fab
 $fab: 40px;
-$fab-mini: $fab / 2;
+$fab-mini: $fab * .60;
+$fab-margin: 15px;
+$fab-padding: 5px;
+$fab-mini-margin: auto;
+$fab-mini-padding: 3px;
+
+// Tooltip
+$tooltip-width: 60px;
+$tooltip-border-radius: 6px;
+$tooltip-padding: $fab-mini-padding 0;
+$tooltip-v-offset: 2px;
+$tooltip-h-offset: 150%;
 
 /* $default-transition-property: all;
 $default-transition-duration: 1s;
