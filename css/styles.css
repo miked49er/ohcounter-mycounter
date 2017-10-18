@@ -138,6 +138,25 @@ body:after {
   display: none !important;
 }
 
+/* line 1, ../lib/sass/_partials.scss */
+.fab, .fab-mini {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -moz-box-shadow: 1px 2px 5px #333333;
+  -webkit-box-shadow: 1px 2px 5px #333333;
+  box-shadow: 1px 2px 5px #333333;
+  display: flex;
+  position: relative;
+  background-color: #a40cbe;
+  border-radius: 100px;
+  align-items: center;
+  vertical-align: middle;
+  z-index: 10;
+  cursor: pointer;
+}
+
 /* line 1, ../lib/sass/_animations.scss */
 .slide-in {
   z-index: 10;
@@ -213,6 +232,58 @@ body:after {
   transition-duration: .5s;
 }
 
+/* line 1, ../lib/sass/_tooltip.scss */
+.tooltip .tooltiptext {
+  -moz-box-shadow: 1px 2px 5px #333333;
+  -webkit-box-shadow: 1px 2px 5px #333333;
+  box-shadow: 1px 2px 5px #333333;
+  visibility: hidden;
+  min-width: 60px;
+  width: auto;
+  background-color: rgba(47, 47, 47, 0.8);
+  color: #fff;
+  font-size: .9rem;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 10;
+}
+
+/* line 18, ../lib/sass/_tooltip.scss */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* line 22, ../lib/sass/_tooltip.scss */
+.tooltip-left {
+  top: -2px;
+  right: 150%;
+}
+
+/* line 27, ../lib/sass/_tooltip.scss */
+.tooltip-right {
+  top: -2px;
+  left: 150%;
+}
+
+/* line 32, ../lib/sass/_tooltip.scss */
+.tooltip-top {
+  width: 60px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -30px;
+}
+
+/* line 39, ../lib/sass/_tooltip.scss */
+.tooltip-bottom {
+  width: 60px;
+  top: 100%;
+  left: 50%;
+  margin-left: -30px;
+}
+
 /* line 1, ../lib/sass/_nav.scss */
 header {
   display: block;
@@ -241,7 +312,7 @@ header .menu-button {
   z-index: 20;
   width: 90%;
   height: 100vh;
-  background-color: #fff;
+  background-color: #000;
 }
 
 /* line 28, ../lib/sass/_nav.scss */
@@ -271,41 +342,53 @@ header .menu-button {
 
 /* line 1, ../lib/sass/_fab.scss */
 .fab {
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  -moz-box-shadow: 1px 2px 5px #333333;
-  -webkit-box-shadow: 1px 2px 5px #333333;
-  box-shadow: 1px 2px 5px #333333;
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #a40cbe;
-  border-radius: 100px;
   padding: 5px;
   margin: 15px;
-  align-items: center;
-  vertical-align: middle;
 }
-/* line 19, ../lib/sass/_fab.scss */
+/* line 6, ../lib/sass/_fab.scss */
 .fab svg {
   width: 40px;
   height: 40px;
   fill: #fff;
 }
-/* line 28, ../lib/sass/_fab.scss */
-.fab:hover svg {
+
+/* line 13, ../lib/sass/_fab.scss */
+.fab-mini {
+  max-width: 30px;
+  padding: 3px;
+  margin: auto;
+}
+/* line 20, ../lib/sass/_fab.scss */
+.fab-mini svg {
+  width: 24px;
+  height: 24px;
   fill: #fff;
 }
-/* line 36, ../lib/sass/_fab.scss */
-.fab:active svg {
-  fill: #fff;
+/* line 26, ../lib/sass/_fab.scss */
+.fab-mini .tooltiptext {
+  visibility: visible;
 }
 
-/* line 44, ../lib/sass/_fab.scss */
-.fab-mini svg {
-  width: 20px;
-  height: 20px;
+/* line 31, ../lib/sass/_fab.scss */
+.fab-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* line 36, ../lib/sass/_fab.scss */
+.fab-menu label {
+  cursor: pointer;
+  position: relative;
+  height: 24px;
+}
+/* line 42, ../lib/sass/_fab.scss */
+.fab-menu input[type="radio"] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+}
+/* line 49, ../lib/sass/_fab.scss */
+.fab-menu .fab-mini + .fab-mini {
+  margin-top: 15px;
 }
