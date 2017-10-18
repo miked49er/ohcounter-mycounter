@@ -4,6 +4,7 @@ body {
     font-size: 1.2rem;
     font-weight: normal;
     line-height: 110%;
+    z-index: $z-base;
 } // body
 
 #{headings()} {
