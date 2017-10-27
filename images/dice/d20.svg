@@ -1,0 +1,7 @@
+<svg onclick="rollDie(20)" id="SVGRoot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45.9">
+  <defs>
+    <style>.cls-1,.cls-2{isolation:isolate;}.cls-2{font-size:40px;fill:#fff;font-family:Marvel-Regular, Marvel;}</style>
+  </defs>
+  <g id="layer1"><path id="path1390" d="M46.5,35.18,24.09,46.5,1.59,35.32,1.5,12.82,23.91,1.5l22.5,11.18Z" transform="translate(-1.5 -1.5)"/></g>
+   <g id="layer2"><g id="text1394" class="cls-1"><text class="cls-2" transform="translate(6.64 35.54)">20</text></g></g>
+</svg>
