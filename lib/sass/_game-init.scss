@@ -1,0 +1,42 @@
+.group {
+  @include box-shadow;
+  display: flex;
+  width: $group-width;
+  height: $group-height;
+  padding: $group-padding;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $z-base;
+  background-color: $group-background-color;
+} // group
+
+.player-names {
+  display: block;
+  text-align: center;
+  align-items: center;
+
+  .player-name {
+    margin: auto;
+    margin-bottom: .3rem;
+    overflow: hidden;
+
+    label {
+      color: $secondaryContent;
+      font-size: 1.3rem;
+      float: left;
+    } // label
+
+    input {
+      background-color: $player-input-background-color;
+      color: $player-input-color;
+      border: none;
+      border-bottom: $player-input-border;
+      margin-left: 10px;
+      font-size: 1rem;
+      float: right;
+    } // input
+  } // player-name
+} // player-names
