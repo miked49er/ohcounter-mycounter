@@ -152,14 +152,15 @@ body:after {
 /* line 25, ../lib/sass/_layout.scss */
 #content {
   margin-top: 50px;
+  overflow: auto;
 }
 
-/* line 29, ../lib/sass/_layout.scss */
+/* line 30, ../lib/sass/_layout.scss */
 .hide {
   display: none !important;
 }
 
-/* line 33, ../lib/sass/_layout.scss */
+/* line 34, ../lib/sass/_layout.scss */
 .center {
   margin: auto;
 }
