@@ -1,0 +1,45 @@
+<script id="num-players-template" type="x-template">
+  <div class="group">
+    <div class="player-selection">
+      <h2>Number of Players</h2>
+      <div class="player-selection-input">
+        <input checked type="radio" id="player-option-1" name="player-selection" value="1"><!--
+      --><label for="player-option-1">1</label><!--
+      --><input type="radio" id="player-option-2" name="player-selection" value="2"><!--
+      --><label for="player-option-2">2</label><!--
+      --><input type="radio" id="player-option-3" name="player-selection" value="3"><!--
+      --><label for="player-option-3">3</label><!--
+      --><input type="radio" id="player-option-4" name="player-selection" value="4"><!--
+      --><label for="player-option-4">4</label>
+      </div>
+      <div class="player-selection-input">
+        <input type="radio" id="player-option-5" name="player-selection" value="5"><!--
+      --><label for="player-option-5">5</label><!--
+      --><input type="radio" id="player-option-6" name="player-selection" value="6"><!--
+      --><label for="player-option-6">6</label><!--
+      --><input type="radio" id="player-option-7" name="player-selection" value="7"><!--
+      --><label for="player-option-7">7</label><!--
+      --><input type="radio" id="player-option-8" name="player-selection" value="8"><!--
+      --><label for="player-option-8">8</label>
+      </div> <!-- player-selection-input -->
+
+      <button class="rounded-button secondaryContent" onclick="enterPlayerNames();">Next</button>
+    </div> <!-- player-selection -->
+  </div> <!-- group -->
+</script>
+
+<script id="player-names-template" type="x-template">
+  <div class="group">
+    <div class="player-names">
+      <h2>Player Names</h2>
+
+    </div> <!-- player-names -->
+  </div> <!-- group -->
+</script>
+
+<script id="new-name-template" type="x-template">
+  <div class="player-name">
+    <label for="player">Player</label>
+    <input type="text" id="player" name="player">
+  </div> <!-- player-name -->
+</script>
