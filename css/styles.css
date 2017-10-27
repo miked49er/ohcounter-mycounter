@@ -106,19 +106,27 @@ body {
   font-weight: normal;
   line-height: 110%;
   z-index: 1;
+  background-color: #fff;
 }
 
-/* line 10, ../lib/sass/_base.scss */
+/* line 11, ../lib/sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Exo 2", Sans-Serif;
   font-weight: bold;
 }
 
-/* line 15, ../lib/sass/_base.scss */
+/* line 16, ../lib/sass/_base.scss */
 h1 {
   display: block;
   line-height: 50px;
   font-size: 1.4rem;
+}
+
+/* line 22, ../lib/sass/_base.scss */
+h2 {
+  color: #fff;
+  font-size: .9rem;
+  margin-bottom: .6rem;
 }
 
 /* line 21, ../../../../../var/lib/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
@@ -183,6 +191,35 @@ body:after {
   z-index: 9;
   width: 100%;
   height: 100vh;
+}
+
+/* line 25, ../lib/sass/_partials.scss */
+.player-selection .player-selection-input {
+  overflow: hidden;
+  display: inline-block;
+}
+/* line 29, ../lib/sass/_partials.scss */
+.player-selection .player-selection-input input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+/* line 35, ../lib/sass/_partials.scss */
+.player-selection .player-selection-input label {
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+/* line 43, ../lib/sass/_partials.scss */
+.player-selection .player-selection-input input[type=radio]:checked + label {
+  color: #26e454;
+  background: #fff;
+}
+/* line 48, ../lib/sass/_partials.scss */
+.player-selection .player-selection-input label + input[type=radio] + label {
+  border-left: solid 3px #fff;
 }
 
 /* line 1, ../lib/sass/_animations.scss */
@@ -416,4 +453,80 @@ header .menu-button {
 /* line 57, ../lib/sass/_fab.scss */
 .fab-menu .fab-menu-items.show {
   display: block;
+}
+
+/* line 1, ../lib/sass/_radio-groups.scss */
+.player-selection {
+  display: block;
+  text-align: center;
+}
+/* line 5, ../lib/sass/_radio-groups.scss */
+.player-selection .player-selection-input {
+  border: solid 3px #fff;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+/* line 1, ../lib/sass/_button.scss */
+.rounded-button {
+  display: block;
+  width: 100px;
+  height: 35px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+/* line 10, ../lib/sass/_button.scss */
+.rounded-button.secondaryContent {
+  border-color: #fff;
+  background-color: #26e454;
+  color: #fff;
+}
+
+/* line 1, ../lib/sass/_game-init.scss */
+.group {
+  -moz-box-shadow: 1px 2px 5px #333333;
+  -webkit-box-shadow: 1px 2px 5px #333333;
+  box-shadow: 1px 2px 5px #333333;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding: 0 5%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #26e454;
+}
+
+/* line 16, ../lib/sass/_game-init.scss */
+.player-names {
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+/* line 21, ../lib/sass/_game-init.scss */
+.player-names .player-name {
+  margin: auto;
+  margin-bottom: .3rem;
+  overflow: hidden;
+}
+/* line 26, ../lib/sass/_game-init.scss */
+.player-names .player-name label {
+  color: #fff;
+  font-size: 1.3rem;
+  float: left;
+}
+/* line 32, ../lib/sass/_game-init.scss */
+.player-names .player-name input {
+  background-color: #26e454;
+  color: #fff;
+  border: none;
+  border-bottom: solid thin #fff;
+  margin-left: 10px;
+  font-size: 1rem;
+  float: right;
 }
