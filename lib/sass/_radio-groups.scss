@@ -1,0 +1,11 @@
+.player-selection {
+  display: block;
+  text-align: center;
+
+  .player-selection-input {
+    @extend %txtRadios;
+    border: solid $radio-border-width $radio-group-color;
+    border-radius: $radio-border-radius;
+    margin: $radio-player-margin;
+  } // player-selection-input
+} // player-selection
