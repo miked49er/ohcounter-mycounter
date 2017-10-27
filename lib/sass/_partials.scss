@@ -20,4 +20,32 @@
     z-index: $z-content-cover;
     width: 100%;
     height: 100vh;
-} // menu-active
+} // activeToggle
+
+%txtRadios {
+  overflow: hidden;
+  display: inline-block;
+
+  input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  } // input[type=radio]
+
+  label {
+    color: $radio-group-color;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: $radio-padding;
+  } // label
+
+  input[type=radio]:checked + label{
+    color: $secondary;
+    background: $radio-group-color;
+  } // input[type=radio]:checked + label
+
+  label + input[type=radio] + label {
+    border-left: solid $radio-border-width $radio-group-color;
+  } // label + input[type=radio] + label
+} // txtRadios
