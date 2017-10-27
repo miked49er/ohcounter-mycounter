@@ -9,3 +9,23 @@
     margin: $radio-player-margin;
   } // player-selection-input
 } // player-selection
+
+.game-selection {
+  display: block;
+  text-align: center;
+
+  .game-selection-input {
+    @extend %txtRadios;
+    border: solid $radio-border-width $radio-group-color;
+    border-radius: $radio-border-radius;
+    margin: $radio-game-margin;
+
+    label {
+      display: block;
+    } // label
+
+    .game + .game {
+      border-top: solid $radio-border-width $radio-group-color;
+    } // game + game
+  } // game-selection-input
+} // game-selection
