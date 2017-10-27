@@ -1,4 +1,4 @@
-/* line 5, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -129,7 +129,7 @@ h2 {
   margin-bottom: .6rem;
 }
 
-/* line 21, ../../../../../var/lib/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -142,7 +142,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../var/lib/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+/* line 12, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 body:after {
   content: " ";
   display: block;
@@ -157,6 +157,16 @@ body:after {
 /* line 29, ../lib/sass/_layout.scss */
 .hide {
   display: none !important;
+}
+
+/* line 33, ../lib/sass/_layout.scss */
+.center {
+  margin: auto;
+}
+
+/* line 1, ../lib/sass/_spacing.scss */
+.topGap {
+  margin-top: 40px;
 }
 
 /* line 1, ../lib/sass/_partials.scss */
@@ -478,9 +488,36 @@ header .menu-button {
   font-size: 1rem;
 }
 /* line 10, ../lib/sass/_button.scss */
+.rounded-button.primaryContent {
+  border-color: #fff;
+  background-color: #a40cbe;
+  color: #fff;
+}
+/* line 15, ../lib/sass/_button.scss */
+.rounded-button.primaryContent:active {
+  background-color: #fff;
+  color: #a40cbe;
+}
+/* line 21, ../lib/sass/_button.scss */
 .rounded-button.secondaryContent {
   border-color: #fff;
   background-color: #26e454;
+  color: #fff;
+}
+/* line 26, ../lib/sass/_button.scss */
+.rounded-button.secondaryContent:active {
+  background-color: #fff;
+  color: #26e454;
+}
+/* line 32, ../lib/sass/_button.scss */
+.rounded-button.tertiaryContent {
+  border-color: #000;
+  background-color: #fff;
+  color: #000;
+}
+/* line 37, ../lib/sass/_button.scss */
+.rounded-button.tertiaryContent:active {
+  background-color: #000;
   color: #fff;
 }
 
@@ -506,21 +543,20 @@ header .menu-button {
 .player-names {
   display: block;
   text-align: center;
-  align-items: center;
 }
-/* line 21, ../lib/sass/_game-init.scss */
+/* line 20, ../lib/sass/_game-init.scss */
 .player-names .player-name {
   margin: auto;
   margin-bottom: .3rem;
   overflow: hidden;
 }
-/* line 26, ../lib/sass/_game-init.scss */
+/* line 25, ../lib/sass/_game-init.scss */
 .player-names .player-name label {
   color: #fff;
   font-size: 1.3rem;
   float: left;
 }
-/* line 32, ../lib/sass/_game-init.scss */
+/* line 31, ../lib/sass/_game-init.scss */
 .player-names .player-name input {
   background-color: #26e454;
   color: #fff;
