@@ -169,6 +169,15 @@ body:after {
   margin-top: 40px;
 }
 
+/* line 5, ../lib/sass/_spacing.scss */
+.bottom {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 /* line 1, ../lib/sass/_partials.scss */
 .fab, .fab-mini {
   -moz-transition: all 1s;
