@@ -7,9 +7,36 @@
   border-radius: $button-round-radius;
   font-size: 1rem;
 
+  &.primaryContent {
+    border-color: $primaryContent;
+    background-color: $primary;
+    color: $primaryContent;
+
+    &:active {
+      background-color: $primaryContent;
+      color: $primary;
+    } // primaryContent:active
+  } // primaryContent
+
   &.secondaryContent {
     border-color: $secondaryContent;
     background-color: $secondary;
     color: $secondaryContent;
+
+    &:active {
+      background-color: $secondaryContent;
+      color: $secondary;
+    } // secondaryContent:active
   } // secondaryContent
+
+  &.tertiaryContent {
+    border-color: $tertiaryContent;
+    background-color: $tertiary;
+    color: $tertiaryContent;
+
+    &:active {
+      background-color: $tertiaryContent;
+      color: $tertiary;
+    } // tertiaryContent:active
+  } // tertiaryContent
 } // rounded-button
