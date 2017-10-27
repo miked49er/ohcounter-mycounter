@@ -1,0 +1,15 @@
+.rounded-button {
+  display: block;
+  width: $button-round-width;
+  height: $button-round-height;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: $button-round-radius;
+  font-size: 1rem;
+
+  &.secondaryContent {
+    border-color: $secondaryContent;
+    background-color: $secondary;
+    color: $secondaryContent;
+  } // secondaryContent
+} // rounded-button
