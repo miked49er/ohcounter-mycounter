@@ -5,6 +5,7 @@ body {
     font-weight: normal;
     line-height: 110%;
     z-index: $z-base;
+    background-color: $bg;
 } // body
 
 #{headings()} {
@@ -17,3 +18,9 @@ h1 {
     line-height: 50px;
     font-size: 1.4rem;
 } // h1
+
+h2 {
+  color: $secondaryContent;
+  font-size: .9rem;
+  margin-bottom: .6rem;
+} // h2
