@@ -1,0 +1,10 @@
+{
+"name": "ohcounter-mycounter",
+"short_name":"Oh Counter!",
+"Description":"A boardgame and cardgame number tracker",
+"icon_source":"./images/icons",
+"icon_size":"48x48",
+"icon":"ocmc.png",
+"language":"en-US",
+
+}
