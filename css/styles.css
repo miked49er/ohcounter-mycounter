@@ -152,15 +152,14 @@ body:after {
 /* line 25, ../lib/sass/_layout.scss */
 #content {
   margin-top: 50px;
-  overflow: auto;
 }
 
-/* line 30, ../lib/sass/_layout.scss */
+/* line 29, ../lib/sass/_layout.scss */
 .hide {
   display: none !important;
 }
 
-/* line 34, ../lib/sass/_layout.scss */
+/* line 33, ../lib/sass/_layout.scss */
 .center {
   margin: auto;
 }
@@ -595,4 +594,19 @@ header .menu-button {
   margin-left: 10px;
   font-size: 1rem;
   float: right;
+}
+
+/* line 5, ../lib/sass/_dice.scss */
+.dice {
+  fill: #26e454;
+  font-family: Marvel, Sans-Serif;
+  width: 100px;
+  display: inline-block;
+}
+
+/* line 13, ../lib/sass/_dice.scss */
+.dice-text {
+  fill: #fff;
+  font-size: 40px;
+  line-height: 100%;
 }
