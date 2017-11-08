@@ -1,0 +1,20 @@
+{
+  "name": "xyz",
+  "primary": {
+    "name": "xyz",
+    "max": null,
+    "min": null,
+    "start": 40,
+    "increments": {
+      "1": 5,
+      "2": 1
+    },
+    "announce": false
+  },
+  "secondary": [
+
+  ],
+  "tertiary": [
+
+  ]
+}
