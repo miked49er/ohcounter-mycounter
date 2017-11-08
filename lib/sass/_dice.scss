@@ -1,0 +1,21 @@
+.dice-group {
+
+} // dice-group
+
+.dice {
+  // isolation: isolate;
+  fill: $secondary;
+  font-family: $font-secondary;
+  width: 100px;
+  display: inline-block;
+} // dice
+
+.dice-text {
+  fill: $secondaryContent;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+.coin {
+
+} // coin
