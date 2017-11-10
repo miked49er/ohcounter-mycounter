@@ -6,6 +6,7 @@ body {
     line-height: 110%;
     z-index: $z-base;
     background-color: $bg;
+    cursor: default;
 } // body
 
 #{headings()} {
