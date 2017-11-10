@@ -1,10 +1,14 @@
 {
-"name": "ohcounter-mycounter",
-"short_name":"Oh Counter!",
-"Description":"A boardgame and cardgame number tracker",
-"icon_source":"./images/icons",
-"icon_size":"48x48",
-"icon":"ocmc.png",
-"language":"en-US",
+  "name":"Oh Counter, My Counter!",
+  "short_name":"OhCounter!",
+  "start_url":"/index.html",
+  "scope":".",
+  "display":"standalone",
+  "background_color":"#fff",
+  "theme_color":"#FF0000",
+  "description":"The last counter you will ever need!",
+  "dir":"ltr",
+  "lang":"en-US",
+  "orientation":"portrait-primary"
 
 }
