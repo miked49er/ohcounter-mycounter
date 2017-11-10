@@ -2,19 +2,23 @@
   "games": [
     {
       "id":0,
-      "name":"Game Option 0"
+      "name":"MTG Standard",
+      "template": "games/MTG-Standard.json"
     },
     {
       "id":1,
-      "name":"Game Option 1"
+      "name":"MTG Commander",
+      "template": "games/MTG-Commander.json"
     },
     {
       "id":2,
-      "name":"Game Option 2"
+      "name":"Yu-Gi-Oh",
+      "template": "games/YuGiOh.json"
     },
     {
       "id":3,
-      "name":"Game Option 3"
+      "name":"Munchkin",
+      "template": "games/Munchkin.json"
     }
   ]
 }
