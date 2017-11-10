@@ -1,4 +1,21 @@
-<svg class="dice" onclick="rollDie(8)" id="d8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 44.08">
-  <g id="layer1"><path id="path1426" d="M24.13,4.11,9,24,24,44,39,24.2h0l0,0,0,0h0Z" transform="translate(-9 -3.14)"/></g>
-  <g id="layer3"><g id="text1415" class="cls-1"><text class="dice-text" transform="translate(6.44 34)">8</text></g></g>
+<svg class="dice" version="1.1" id="d8" onclick="rollDie(8)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+	 xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{font-family:'Marvel-Regular';}
+	.st1{font-size:300;}
+	.st2{fill:#FFFFFF;}
+]]>
+</style>
+<font horiz-adv-x="1000">
+<!-- Marvel is a trademark of Carolina Trebol. -->
+<!-- Copyright: Copyright 2017 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Marvel-Regular" units-per-em="1000" underline-position="-75" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="500"/>
+<glyph unicode="8" horiz-adv-x="433" d="M201,39l32,0C256,39 276,48 292,65C308,82 316,103 316,128l0,76C316,218 313,230 308,241C302,252 294,261 285,268C276,275 265,280 253,283C241,286 228,288 215,288C189,288 166,281 147,268C128,255 118,233 118,204l0,-76C118,103 126,82 142,65C158,48 178,39 201,39M201,355l32,0C256,355 276,364 292,381C308,398 316,419 316,444l0,78C316,549 307,569 288,584C269,599 247,606 222,606C208,606 195,605 183,602C170,599 159,594 150,588C140,581 132,573 127,562C121,551 118,538 118,522l0,-78C118,419 126,398 142,381C158,364 178,355 201,355M134,323C114,334 98,351 86,372C73,393 67,416 67,441l0,86C67,551 71,571 80,588C89,604 100,617 115,627C129,637 146,644 165,649C184,653 203,655 224,655C243,655 261,652 278,646C295,640 311,632 324,621C337,610 347,596 355,581C362,565 366,547 366,527l0,-86C366,415 360,392 347,371C334,350 318,333 297,322C318,311 334,297 347,278C360,259 366,236 366,210l0,-85C366,107 363,90 357,74C350,57 341,43 330,31C319,18 305,9 290,2C275,-5 258,-9 241,-9l-48,0C176,-9 159,-5 144,2C129,9 115,18 104,31C93,43 84,57 77,74C70,90 67,107 67,125l0,85C67,235 73,258 86,278C98,298 114,313 134,323z"/>
+</font>
+
+	<polygon points="75,250 250,0 425,250 250,500 "/>
+	<text transform="matrix(1 0 0 1 185.0503 346.6484)" class="dice-text">8</text>
 </svg>

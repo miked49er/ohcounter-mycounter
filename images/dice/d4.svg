@@ -1,4 +1,21 @@
-<svg class="dice" onclick="rollDie(4)" id="d4" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.65 31.33">
-  <polygon class="cls-1" points="30.82 30 15.76 30 0.82 30 15.76 1.09 30.82 30"/>
-  <text class="dice-text" transform="translate(11.07 25.28)">4</text>
+<svg class="dice" version="1.0" id="d4" onclick="rollDie(4)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+	 xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{font-family:'Marvel-Regular';}
+	.st1{font-size:300;}
+	.st2{fill:#FFFFFF;}
+]]>
+</style>
+<font horiz-adv-x="1000">
+<!-- Marvel is a trademark of Carolina Trebol. -->
+<!-- Copyright: Copyright 2017 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Marvel-Regular" units-per-em="1000" underline-position="-75" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="500"/>
+<glyph unicode="4" horiz-adv-x="393" d="M285,0l0,195l-253,0l0,59l151,396l55,0l-148,-401l195,0l0,114l53,0l0,-363z"/>
+</font>
+
+	<polygon points="500,500 0,500 250,0 "/>
+	<text transform="matrix(1 0 0 1 191.0513 402.6484)" class="dice-text">4</text>
 </svg>

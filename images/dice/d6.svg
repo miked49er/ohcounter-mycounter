@@ -1,4 +1,21 @@
-<svg class="dice" onclick="rollDie(6)" id="d6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 44.08">
-  <g id="layer1"><rect id="rect1450" y="6.28" width="30" height="30"/></g>
-  <g id="layer3"><g id="text1415" class="cls-1"><text class="dice-text" transform="translate(5.36 34)">6</text></g></g>
+<svg class="dice" version="1.1" id="d6" onclick="rollDie(6)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+	 xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{font-family:'Marvel-Regular';}
+	.st1{font-size:300;}
+	.st2{fill:#FFFFFF;}
+]]>
+</style>
+<font horiz-adv-x="1000">
+<!-- Marvel is a trademark of Carolina Trebol. -->
+<!-- Copyright: Copyright 2017 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Marvel-Regular" units-per-em="1000" underline-position="-75" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="500"/>
+<glyph unicode="6" horiz-adv-x="419" d="M234,362l-32,0C179,362 160,354 144,337C128,320 120,299 120,275l0,-149C120,97 130,76 150,63C169,49 192,42 219,42C232,42 244,44 256,47C267,50 278,55 287,62C296,69 303,77 308,88C313,98 316,111 316,126l0,149C316,299 308,320 292,337C276,354 257,362 234,362M234,-7l-33,0C183,-7 166,-3 150,4C134,11 120,20 108,33C96,45 87,59 80,76C73,93 69,111 69,130l0,374C69,526 73,546 81,565C89,584 100,600 114,614C128,627 145,638 164,645C183,652 203,656 224,656C227,656 234,655 244,653C254,651 265,649 276,646C289,643 303,640 318,636l-14,-47C291,592 279,595 268,598C259,600 250,602 241,604C232,606 227,607 224,607C195,607 171,598 150,579C129,560 118,535 118,504l0,-119C126,392 136,397 147,401C158,404 170,407 181,409C192,411 203,412 212,413C221,413 229,413 234,413C253,413 270,409 286,402C302,395 316,385 328,372C340,359 350,344 357,327C364,310 367,291 367,272l0,-142C367,111 364,93 357,76C350,59 340,45 328,33C316,20 302,11 286,4C270,-3 253,-7 234,-7z"/>
+</font>
+
+	<rect id="rect1450" width="500" height="500"/>
+	<text transform="matrix(1 0 0 1 187.1519 339.6484)" class="dice-text">6</text>
 </svg>

@@ -1,4 +1,25 @@
-<svg class="coin" onclick="coinFlip()" id="coin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45">
-  <g id="layer1"><circle id="path1458" cx="22.5" cy="22.5" r="22.5"/></g>
-  <g id="layer3"><g id="text1415" class="cls-1"><text class="dice-text" transform="translate(1.46 30.26)">C<tspan class="cls-3" x="10.34" y="0">OIN</tspan></text></g></g>
+<svg class="dice" version="1.1" id="coin" onclick="coinFlip()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+	 xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{font-family:'Marvel-Regular';}
+	.st1{font-size:250;}
+	.st2{fill:#FFFFFF;}
+]]>
+</style>
+<font horiz-adv-x="1000">
+<!-- Marvel is a trademark of Carolina Trebol. -->
+<!-- Copyright: Copyright 2017 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Marvel-Regular" units-per-em="1000" underline-position="-75" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="500"/>
+<glyph unicode="C" horiz-adv-x="437" d="M121,188C121,167 125,147 132,130C139,113 149,98 161,86C173,74 187,65 203,58C219,51 236,47 253,46C258,46 264,47 270,48C275,49 283,51 292,54C301,57 312,62 327,68C341,73 360,81 383,90l22,-57l-81,-29C313,0 300,-3 287,-6C274,-9 262,-10 253,-10C228,-10 204,-5 182,4C159,13 140,25 123,42C106,59 92,79 82,103C72,126 67,153 67,183l0,10l0,313C67,534 72,560 82,585C91,609 102,627 114,640C126,653 136,663 143,670C150,676 158,681 166,686C173,689 183,694 196,701C209,707 229,710 255,710C264,710 276,708 289,705C302,702 314,698 325,695l78,-31l-18,-52l-87,34C291,649 284,651 277,653C270,655 263,656 256,656C238,656 221,652 205,644C189,635 175,624 163,610C150,596 141,580 134,562C127,544 123,525 123,506z"/>
+<glyph unicode="I" horiz-adv-x="208" d="M78,700l52,0l0,-700l-52,0z"/>
+<glyph unicode="N" horiz-adv-x="554" d="M476,700l0,-700l-97,0l-238,582l-12,0l0,-582l-51,0l0,700l72,0l261,-631l13,0l0,631z"/>
+<glyph unicode="O" horiz-adv-x="520" d="M397,172l0,351C397,550 392,571 382,588C371,604 359,617 345,626C330,635 315,641 300,644C284,647 271,648 260,648C249,648 236,646 221,643C205,640 190,634 175,625C160,616 148,603 138,587C127,570 122,549 122,522l0,-351C122,144 127,123 138,108C148,92 160,80 175,72C190,63 205,58 221,56C236,53 249,52 260,52C271,52 284,53 300,56C315,59 330,64 345,73C359,81 371,93 382,109C392,124 397,145 397,172M452,172C452,157 449,140 444,119C438,98 428,79 413,60C398,41 379,24 354,11C329,-2 297,-9 259,-9C222,-9 191,-2 166,11C141,24 122,41 108,60C93,79 83,98 77,119C71,140 68,157 68,172l0,350C68,537 71,555 77,576C82,597 92,618 107,638C122,657 141,674 166,688C191,702 222,709 260,709C297,709 328,702 353,688C378,674 397,657 412,638C427,619 437,598 443,577C449,556 452,538 452,523z"/>
+</font>
+
+	<circle cx="250" cy="250" r="250"/>
+	<text transform="matrix(1 0 0 1 36.3789 340.873)" class="coin-text">COIN</text>
+</g>
 </svg>

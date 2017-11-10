@@ -1,4 +1,22 @@
-<svg class="dice" onclick="rollDie(10)" id="d10" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.29 41.11">
-  <polygon class="cls-1" points="30.64 30 15.59 40.5 0.65 30 15.59 1.09 30.64 30"/>
-  <text class="dice-text" transform="translate(8.89 31.7)">10</text>
+<svg class="dice" version="1.1" id="d10" onclick="rollDie(10)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+	 xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{font-family:'Marvel-Regular';}
+	.st1{font-size:300;}
+	.st2{fill:#FFFFFF;}
+]]>
+</style>
+<font horiz-adv-x="1000">
+<!-- Marvel is a trademark of Carolina Trebol. -->
+<!-- Copyright: Copyright 2017 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Marvel-Regular" units-per-em="1000" underline-position="-75" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="500"/>
+<glyph unicode="0" horiz-adv-x="436" d="M202,44l32,0C257,44 276,53 292,70C308,87 316,107 316,131l0,387C316,545 307,565 288,580C269,594 248,601 223,601C209,601 196,600 184,597C171,594 160,590 151,583C142,576 134,568 129,558C123,547 120,534 120,518l0,-387C120,107 128,87 144,70C159,53 179,44 202,44M367,518l0,-390C367,109 364,91 357,74C350,57 340,43 328,31C316,18 302,9 286,2C270,-5 253,-9 234,-9l-33,0C182,-9 165,-5 149,2C133,9 119,18 107,31C95,43 86,57 79,74C72,91 69,109 69,128l0,390C69,537 73,555 80,572C87,589 96,603 108,616C120,628 134,638 150,645C166,652 183,655 202,655l33,0C253,655 270,652 286,645C302,638 316,628 328,616C340,603 350,589 357,572C364,555 367,537 367,518z"/>
+<glyph unicode="1" horiz-adv-x="210" d="M78,623l53,27l0,-649l-53,0z"/>
+</font>
+
+	<polygon points="440.244,366.785 249.302,500 59.756,366.785 249.302,0 "/>
+	<text transform="matrix(1 0 0 1 158.103 405.1973)" class="dice-text">10</text>
 </svg>
