@@ -1,24 +1,58 @@
 .dice-group {
+  @include transition;
+  display: block;
+  width: 100%;
+  margin: auto;
 
+  .dice-result {
+    width: 75%;
+    height: 60px;
+    background-color: $tertiary;
+    margin: 25px auto;
+    text-align: center;
+
+    h3 {
+      font-size: 2rem;
+      color: $tertiaryContent;
+      line-height: 60px;
+    } // h3
+  } // dice-result
 } // dice-group
 
+#dice-holder {
+  width: $dice-t-width;
+  margin: auto;
+} // dice-holder
+
 .dice {
-  // isolation: isolate;
-  fill: $secondary;
+  fill: $tertiary;
   font-family: $font-secondary;
-  width: 100px;
-  height: 100px;
+  width: $dice-height-width;
+  height: $dice-height-width;
   display: inline-block;
+  margin: $dice-margin;
+  cursor: pointer;
+
+  .dice-text {
+    fill: $tertiaryContent;
+    font-size: 300px;
+    line-height: 100%;
+  } // dice-text
 } // dice
 
-.dice-text {
-  fill: $secondaryContent;
-  font-size: 300px;
-  line-height: 100%;
-}
 
-.coin-text {
-  fill: $secondaryContent;
-  font-size: 250px;
-  line-height: 100%;
-} // coin-text
+.coin {
+  fill: $tertiary;
+  font-family: $font-secondary;
+  width: $dice-height-width;
+  height: $dice-height-width;
+  display: block;
+  margin: $dice-margin auto;
+  cursor: pointer;
+
+  .coin-text {
+    fill: $tertiaryContent;
+    font-size: 250px;
+    line-height: 100%;
+  } // coin-text
+} // coint
