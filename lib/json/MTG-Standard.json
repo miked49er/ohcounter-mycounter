@@ -1,0 +1,29 @@
+{
+  "name": "Magic The Gathering Standard",
+  "primary": {
+    "name": "Life",
+    "max": null,
+    "min": null,
+    "start": 20,
+    "increments": [
+       5,
+       1
+    ],
+    "announce": false,
+    "otherPlayers":false
+  },
+  "secondary": [
+    {
+      "name": "Poison",
+      "max": null,
+      "min": 0,
+      "start": 0,
+      "increments": 1,
+      "announce": false,
+      "otherPlayers":false
+    }
+  ],
+  "tertiary": [
+
+  ]
+}

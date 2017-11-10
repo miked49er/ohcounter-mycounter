@@ -1,0 +1,29 @@
+{
+  "name": "Munchkin",
+  "primary": {
+    "name": "Level",
+    "max": 10,
+    "min": 1,
+    "start": 1,
+    "increments": [
+       1
+    ],
+    "announce": false,
+    "otherPlayers": false
+  },
+  "secondary": [
+    {
+      "name": "Total Power",
+      "max": null,
+      "min": 0,
+      "start": 1,
+      "increments": 1,
+      "announce": false,
+      "otherPlayers": false
+    }
+
+  ],
+  "tertiary": [
+
+  ]
+}

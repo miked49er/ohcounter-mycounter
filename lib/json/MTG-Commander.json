@@ -1,0 +1,47 @@
+{
+  "name": "Magic The Gathering Commander",
+  "primary": {
+    "name": "Life",
+    "max": null,
+    "min": null,
+    "start": 40,
+    "increments": [
+      10,
+       5,
+       1
+    ],
+    "announce": false,
+    "otherPlayers":false
+  },
+  "secondary": [
+    {
+      "name": "Poison",
+      "max": null,
+      "min": 0,
+      "start": 0,
+      "increments": 1,
+      "announce": false,
+      "otherPlayers":false
+    }
+  ],
+  "tertiary": [
+    {
+      "name": "Commander Additional Cost",
+      "max": null,
+      "min": 0,
+      "start": 0,
+      "increments": 2,
+      "announce":false,
+      "otherPlayers":false
+    },
+    {
+      "name":"Commander Damage",
+      "max":null,
+      "min":0,
+      "start": 0,
+      "increments":1,
+      "announce": false,
+      "otherPlayers":true
+    }
+  ]
+}

@@ -1,16 +1,18 @@
 {
-  "name": "xyz",
+  "name": "Yu-Gi-Oh",
   "primary": {
-    "name": "xyz",
+    "name": "Life Points",
     "max": null,
     "min": null,
-    "start": 40,
+    "start": 8000,
     "increments": [
-       5,
-       1
+       1000,
+       500,
+       100,
+       50
     ],
     "announce": false,
-    "otherPlayers": false
+    "otherPlayers":false
   },
   "secondary": [
 
