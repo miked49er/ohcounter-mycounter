@@ -1,10 +1,12 @@
 {
   "name": "Yu-Gi-Oh",
+  "playerName": null,
   "primary": {
     "name": "Life Points",
     "max": null,
     "min": null,
     "start": 8000,
+    "value": 8000,
     "increments": [
        1000,
        500,

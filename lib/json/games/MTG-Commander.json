@@ -1,10 +1,12 @@
 {
   "name": "Magic The Gathering Commander",
+  "playerName": null,
   "primary": {
     "name": "Life",
     "max": null,
     "min": null,
     "start": 40,
+    "value": 40,
     "increments": [
       10,
        5,
@@ -19,6 +21,7 @@
       "max": null,
       "min": 0,
       "start": 0,
+      "value": 0,
       "increments": 1,
       "announce": false,
       "otherPlayers":false
@@ -30,6 +33,7 @@
       "max": null,
       "min": 0,
       "start": 0,
+      "value": 0,
       "increments": 2,
       "announce":false,
       "otherPlayers":false
@@ -39,6 +43,7 @@
       "max":null,
       "min":0,
       "start": 0,
+      "value": 0,
       "increments":1,
       "announce": false,
       "otherPlayers":true
