@@ -26,10 +26,16 @@ var urlsToCache = [
   baseURL + 'images/dice/d20.svg',
   baseURL + 'lib/json/game-list.json',
   baseURL + 'lib/json/template.json',
+  baseURL + 'lib/json/game-creation-cookie-template.json'
+  baseURL + 'lib/json/games/MTG-Commander.json',
+  baseURL + 'lib/json/games/MTG-Standard.json',
+  baseURL + 'lib/json/games/Munchkin.json',
+  baseURL + 'lib/json/games/YuGiOh.json',
   baseURL + 'template/dice.html',
   baseURL + 'template/fab.html',
   baseURL + 'template/game-select.html',
   baseURL + 'template/num-player-select.html',
+
 
 ];
 
