@@ -1,10 +1,12 @@
 {
   "name": "xyz",
+  "playerName": null,
   "primary": {
     "name": "xyz",
     "max": null,
     "min": null,
     "start": 40,
+    "value": 40,
     "increments": [
        5,
        1
