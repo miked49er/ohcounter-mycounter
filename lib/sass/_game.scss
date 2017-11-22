@@ -1,11 +1,33 @@
 .primary {
 
-}
+} // primary
 
 .value-group {
 
-}
+} // value-group
 
 .multi-counter {
 
-}
+} // multi-counter
+
+.increment-group {
+  font-size: 1.8rem;
+} // increment-group
+
+.loss {
+
+  &::before {
+    font-size: .8rem;
+    vertical-align: middle;
+    content: '\2796\0020';
+  } // loss::before
+} // loss
+
+.gain {
+
+  &::after {
+    font-size: .8rem;
+    vertical-align: middle;
+    content: '\0020\2795';
+  } // gain::after
+} // gain
