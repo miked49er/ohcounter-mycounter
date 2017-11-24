@@ -108,7 +108,7 @@ body {
   z-index: 1;
   background-color: #fff;
   cursor: default;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 /* line 13, ../lib/sass/_base.scss */
@@ -154,15 +154,14 @@ body:after {
 /* line 25, ../lib/sass/_layout.scss */
 #content {
   margin-top: 50px;
-  overflow: scroll;
 }
 
-/* line 30, ../lib/sass/_layout.scss */
+/* line 29, ../lib/sass/_layout.scss */
 .hide {
   display: none !important;
 }
 
-/* line 34, ../lib/sass/_layout.scss */
+/* line 33, ../lib/sass/_layout.scss */
 .center {
   margin: auto;
 }
@@ -262,6 +261,12 @@ body:after {
 .loss::before, .gain::after {
   font-size: .8rem;
   vertical-align: middle;
+}
+
+/* line 70, ../lib/sass/_partials.scss */
+.primary .value-group, .secondary .value-group {
+  width: 20%;
+  margin: auto;
 }
 
 /* line 1, ../lib/sass/_animations.scss */
@@ -724,7 +729,7 @@ header .menu-button {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 60px;
+  min-height: 60px;
 }
 /* line 47, ../lib/sass/_game.scss */
 .single-counter .loss, .single-counter .gain {
@@ -761,23 +766,18 @@ header .menu-button {
   display: block;
   text-align: center;
 }
-/* line 80, ../lib/sass/_game.scss */
+/* line 81, ../lib/sass/_game.scss */
 .primary .value-group h4 {
   font-size: 2.5rem;
   line-height: 120%;
 }
 
-/* line 87, ../lib/sass/_game.scss */
+/* line 88, ../lib/sass/_game.scss */
 .secondary {
   width: 100%;
 }
-/* line 93, ../lib/sass/_game.scss */
-.secondary .value-group {
-  width: 20%;
-  margin: auto;
-}
 
-/* line 100, ../lib/sass/_game.scss */
+/* line 97, ../lib/sass/_game.scss */
 .tertiary {
   width: 50%;
   float: left;
@@ -785,15 +785,15 @@ header .menu-button {
   padding-right: 0.83333%;
   border-bottom: solid medium #26e454;
 }
-/* line 105, ../lib/sass/_game.scss */
-.tertiary:nth-of-type(2n + 1) {
-  border-left: solid medium #26e454;
+/* line 102, ../lib/sass/_game.scss */
+.tertiary:nth-of-type(2n - 1) {
+  border-right: solid medium #26e454;
 }
-/* line 109, ../lib/sass/_game.scss */
+/* line 106, ../lib/sass/_game.scss */
 .tertiary .value-group {
   width: 40%;
 }
-/* line 113, ../lib/sass/_game.scss */
+/* line 110, ../lib/sass/_game.scss */
 .tertiary .loss, .tertiary .gain {
   width: 30%;
 }
