@@ -42,7 +42,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: $increment-s-height;
+  min-height: $increment-s-height;
 
   .loss, .gain {
     vertical-align: middle;
@@ -74,6 +74,7 @@
   width: 100%;
 
   .value-group {
+    @extend %increment-value-group;
     display: block;
     text-align: center;
 
@@ -88,13 +89,9 @@
   @extend %counter;
   width: 100%;
 
-  // .single-counter {
-
-    .value-group {
-      width: 20%;
-      margin: auto;
-    } // value-group
-  // } // single-counter
+  .value-group {
+    @extend %increment-value-group;
+  } // value-group
 } // secondary
 
 .tertiary {
@@ -102,8 +99,8 @@
   @include span(6 of 12);
   border-bottom: solid medium $secondary;
 
-  &:nth-of-type(2n + 1) {
-    border-left: solid medium $secondary;
+  &:nth-of-type(2n - 1) {
+    border-right: solid medium $secondary;
   }
 
   .value-group {
