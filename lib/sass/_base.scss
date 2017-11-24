@@ -7,6 +7,7 @@ body {
     z-index: $z-base;
     background-color: $bg;
     cursor: default;
+    overflow: auto;
 } // body
 
 #{headings()} {
