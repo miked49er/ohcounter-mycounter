@@ -50,3 +50,19 @@
     border-left: solid $radio-border-width $radio-group-color;
   } // label + input[type=radio] + label
 } // txtRadios
+
+%counter {
+  background-color: $secondaryContent;
+  color: $secondary;
+  border-bottom: solid medium $secondary;
+} // counter
+
+%increment {
+  width: $increment-full;
+  font-size: $increment-font-size;
+} // increment
+
+%increment-ba {
+  font-size: .8rem;
+  vertical-align: middle;
+} // increment-ba
