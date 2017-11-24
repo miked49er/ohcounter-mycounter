@@ -1,33 +1,116 @@
-.primary {
-
-} // primary
-
-.value-group {
-
-} // value-group
-
-.multi-counter {
-
-} // multi-counter
-
-.increment-group {
-  font-size: 1.8rem;
-} // increment-group
-
 .loss {
+  @extend %increment;
 
   &::before {
-    font-size: .8rem;
-    vertical-align: middle;
+    @extend %increment-ba;
     content: '\2796\0020';
   } // loss::before
 } // loss
 
 .gain {
+  @extend %increment;
 
   &::after {
-    font-size: .8rem;
-    vertical-align: middle;
+    @extend %increment-ba;
     content: '\0020\2795';
   } // gain::after
 } // gain
+
+.value-group {
+  display: block;
+  text-align: center;
+
+  h4 {
+    font-size: 1.8rem;
+    line-height: 110%;
+    vertical-align: middle;
+  } // h4
+
+  h5 {
+    font-size: .8rem;
+  } // h5
+} // value-group
+
+.multi-counter {
+  border-top: solid thin $secondary;
+  width: 95%;
+  margin: auto;
+} // multi-counter
+
+.single-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: $increment-s-height;
+
+  .loss, .gain {
+    vertical-align: middle;
+    line-height: $increment-s-height;
+  } // loss, gain
+} // single-counter
+
+.increment-group {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  line-height: 120%;
+
+  .loss {
+    float: left;
+  } // loss
+
+  .gain {
+    float: right;
+  } // gain
+
+  & + .increment-group {
+    border-top: solid thin $secondary;
+  } // increment-group + increment-group
+} // increment-group
+
+.primary {
+  @extend %counter;
+  width: 100%;
+
+  .value-group {
+    display: block;
+    text-align: center;
+
+    h4 {
+      font-size: 2.5rem;
+      line-height: 120%;
+    } // h4
+  } // value-group
+} // primary
+
+.secondary {
+  @extend %counter;
+  width: 100%;
+
+  // .single-counter {
+
+    .value-group {
+      width: 20%;
+      margin: auto;
+    } // value-group
+  // } // single-counter
+} // secondary
+
+.tertiary {
+  @extend %counter;
+  @include span(6 of 12);
+  border-bottom: solid medium $secondary;
+
+  &:nth-of-type(2n + 1) {
+    border-left: solid medium $secondary;
+  }
+
+  .value-group {
+    width: 40%;
+  } // value-group
+
+  .loss, .gain {
+    width: $increment-half;
+  } // loss, gain
+} // tertiary
