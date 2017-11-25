@@ -265,7 +265,6 @@ body:after {
 
 /* line 70, ../lib/sass/_partials.scss */
 .primary .value-group, .secondary .value-group {
-  width: 20%;
   margin: auto;
 }
 
@@ -705,79 +704,88 @@ header .menu-button {
   display: block;
   text-align: center;
 }
-/* line 23, ../lib/sass/_game.scss */
-.value-group h4 {
+
+/* line 24, ../lib/sass/_game.scss */
+.counter-value {
   font-size: 1.8rem;
-  line-height: 110%;
+  line-height: 120%;
   vertical-align: middle;
 }
-/* line 29, ../lib/sass/_game.scss */
-.value-group h5 {
+
+/* line 30, ../lib/sass/_game.scss */
+.counter-name {
   font-size: .8rem;
+  text-align: center;
+  height: 22px;
+  overflow: hidden;
 }
 
-/* line 34, ../lib/sass/_game.scss */
+/* line 37, ../lib/sass/_game.scss */
 .multi-counter {
   border-top: solid thin #26e454;
   width: 95%;
   margin: auto;
 }
 
-/* line 40, ../lib/sass/_game.scss */
+/* line 43, ../lib/sass/_game.scss */
 .single-counter {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 60px;
+  height: 40px;
 }
-/* line 47, ../lib/sass/_game.scss */
+/* line 50, ../lib/sass/_game.scss */
 .single-counter .loss, .single-counter .gain {
   vertical-align: middle;
-  line-height: 60px;
+  line-height: 40px;
 }
 
-/* line 53, ../lib/sass/_game.scss */
+/* line 56, ../lib/sass/_game.scss */
 .increment-group {
   display: block;
   text-align: center;
   overflow: hidden;
   line-height: 120%;
 }
-/* line 59, ../lib/sass/_game.scss */
+/* line 62, ../lib/sass/_game.scss */
 .increment-group .loss {
   float: left;
 }
-/* line 63, ../lib/sass/_game.scss */
+/* line 66, ../lib/sass/_game.scss */
 .increment-group .gain {
   float: right;
 }
-/* line 67, ../lib/sass/_game.scss */
+/* line 70, ../lib/sass/_game.scss */
 .increment-group + .increment-group {
   border-top: solid thin #26e454;
 }
 
-/* line 72, ../lib/sass/_game.scss */
+/* line 75, ../lib/sass/_game.scss */
 .primary {
   width: 100%;
 }
-/* line 76, ../lib/sass/_game.scss */
+/* line 79, ../lib/sass/_game.scss */
 .primary .value-group {
   display: block;
   text-align: center;
 }
-/* line 81, ../lib/sass/_game.scss */
-.primary .value-group h4 {
+/* line 85, ../lib/sass/_game.scss */
+.primary .counter-value {
   font-size: 2.5rem;
-  line-height: 120%;
+  vertical-align: middle;
+}
+/* line 90, ../lib/sass/_game.scss */
+.primary .single-counter {
+  height: calc(40px + 15px);
 }
 
-/* line 88, ../lib/sass/_game.scss */
+/* line 95, ../lib/sass/_game.scss */
 .secondary {
   width: 100%;
 }
 
-/* line 97, ../lib/sass/_game.scss */
+/* line 104, ../lib/sass/_game.scss */
 .tertiary {
   width: 50%;
   float: left;
@@ -785,15 +793,24 @@ header .menu-button {
   padding-right: 0.83333%;
   border-bottom: solid medium #26e454;
 }
-/* line 102, ../lib/sass/_game.scss */
+/* line 109, ../lib/sass/_game.scss */
 .tertiary:nth-of-type(2n - 1) {
   border-right: solid medium #26e454;
 }
-/* line 106, ../lib/sass/_game.scss */
+/* line 113, ../lib/sass/_game.scss */
 .tertiary .value-group {
   width: 40%;
 }
-/* line 110, ../lib/sass/_game.scss */
+/* line 117, ../lib/sass/_game.scss */
 .tertiary .loss, .tertiary .gain {
   width: 30%;
+}
+
+/* line 122, ../lib/sass/_game.scss */
+.player {
+  display: none;
+}
+/* line 125, ../lib/sass/_game.scss */
+.player.active {
+  display: block;
 }
