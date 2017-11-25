@@ -19,17 +19,20 @@
 .value-group {
   display: block;
   text-align: center;
-
-  h4 {
-    font-size: 1.8rem;
-    line-height: 110%;
-    vertical-align: middle;
-  } // h4
-
-  h5 {
-    font-size: .8rem;
-  } // h5
 } // value-group
+
+.counter-value {
+  font-size: 1.8rem;
+  line-height: 120%;
+  vertical-align: middle;
+} // .counter-value
+
+.counter-name {
+  font-size: .8rem;
+  text-align: center;
+  height: $increment-s-name-height;
+  overflow: hidden;
+} // counter-name
 
 .multi-counter {
   border-top: solid thin $secondary;
@@ -42,7 +45,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: $increment-s-height;
+  height: $increment-s-height;
 
   .loss, .gain {
     vertical-align: middle;
@@ -77,12 +80,16 @@
     @extend %increment-value-group;
     display: block;
     text-align: center;
-
-    h4 {
-      font-size: 2.5rem;
-      line-height: 120%;
-    } // h4
   } // value-group
+
+  .counter-value {
+    font-size: 2.5rem;
+    vertical-align: middle;
+  } // counter-value
+
+  .single-counter {
+    height: calc(#{$increment-s-height} + 15px);
+  } // single-counter
 } // primary
 
 .secondary {
@@ -111,3 +118,11 @@
     width: $increment-half;
   } // loss, gain
 } // tertiary
+
+.player {
+  display: none;
+
+  &.active {
+    display: block;
+  } // player.active
+} // player
