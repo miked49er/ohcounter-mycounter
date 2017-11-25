@@ -29,7 +29,7 @@
   ],
   "tertiary": [
     {
-      "name": "Commander Additional Cost",
+      "name": "Commander Cost",
       "max": null,
       "min": 0,
       "start": 0,
