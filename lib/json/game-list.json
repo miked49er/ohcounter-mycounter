@@ -2,13 +2,13 @@
   "games": [
     {
       "id":0,
-      "name":"MTG Standard",
-      "template": "games/MTG-Standard.json"
+      "name":"MTG Commander",
+      "template": "games/MTG-Commander.json"
     },
     {
       "id":1,
-      "name":"MTG Commander",
-      "template": "games/MTG-Commander.json"
+      "name":"MTG Standard",
+      "template": "games/MTG-Standard.json"
     },
     {
       "id":2,
