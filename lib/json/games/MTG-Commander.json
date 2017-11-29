@@ -3,6 +3,7 @@
   "playerName": null,
   "primary": {
     "name": "Life",
+    "id": "life",
     "max": null,
     "min": null,
     "start": 40,
@@ -18,6 +19,7 @@
   "secondary": [
     {
       "name": "Poison",
+      "id":"poison",
       "max": null,
       "min": 0,
       "start": 0,
@@ -30,6 +32,7 @@
   "tertiary": [
     {
       "name": "Commander Cost",
+      "id": "commander_cost",
       "max": null,
       "min": 0,
       "start": 0,
@@ -40,6 +43,7 @@
     },
     {
       "name":"Commander Damage",
+      "id": "commander_damge",
       "max":null,
       "min":0,
       "start": 0,

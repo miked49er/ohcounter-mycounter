@@ -3,6 +3,7 @@
   "playerName": null,
   "primary": {
     "name": "Life Points",
+    "id": "life_points",
     "max": null,
     "min": null,
     "start": 8000,
