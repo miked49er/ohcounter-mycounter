@@ -5,6 +5,7 @@ module.exports = function(grunt) {
       files: ["lib/js/*.js"],
       options: {
         esnext: true,
+        elision: true,
         globals: {
           jQuery: true
         } // globals
