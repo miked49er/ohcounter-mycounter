@@ -3,6 +3,7 @@
   "playerName": null,
   "primary": {
     "name": "Level",
+    "id": "level",
     "max": 10,
     "min": 1,
     "start": 1,
@@ -16,6 +17,7 @@
   "secondary": [
     {
       "name": "Total Power",
+      "id": "total_power",
       "max": null,
       "min": 0,
       "start": 1,

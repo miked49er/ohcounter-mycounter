@@ -3,6 +3,7 @@
   "playerName": null,
   "primary": {
     "name": "Life",
+    "id": "life",
     "max": null,
     "min": null,
     "start": 20,
@@ -17,6 +18,7 @@
   "secondary": [
     {
       "name": "Poison",
+      "id": "poison",
       "max": null,
       "min": 0,
       "start": 0,
