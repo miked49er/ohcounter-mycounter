@@ -53,33 +53,26 @@ $z-animations: 90;
 // Colors =====================================
 
 $bg: #fff;
-$primary: #31556d;
-$secondary: #fc992a;
-$tertiary: #5aa99a;
+$primary:   #070303;
+$secondary: #f7121f;
+$tertiary:  #fff;
 
-// $primary:   #070303;
-// $secondary: #f7121f;
-// $tertiary:  #fff;
-
-// $primary:   #242424;
-// $secondary: #62e73d;
-// $tertiary:  #67c7ee;
-
-$primaryContent: #fff;
+$primaryContent:   #fff;
 $secondaryContent: #fff;
-$tertiaryContent: #000;
+$tertiaryContent:  #000;
 
-$primaryHover: lighten($primary, 20);
-$secondaryHover: lighten($secondary, 20);
-$tertiaryHover: lighten($tertiary, 20);
+$primaryHover:   #030707;
+$secondaryHover: #12f7ea;
+// $secondaryHover: #f9434e;
+$tertiaryHover:  #e5e5e5;
 
-$primaryHoverContent: #fff;
+$primaryHoverContent:   #fff;
 $secondaryHoverContent: #000;
-$tertiaryHoverContent: #000;
+$tertiaryHoverContent:  #000;
 
-$primaryActive: lighten($primary, 20);
-$secondaryActive: lighten($secondary, 20);
-$tertiaryActive: lighten($tertiary, 20);
+$primaryActive:   $primaryHover;
+$secondaryActive: $secondaryHover;
+$tertiaryActive:  $tertiaryHover;
 
 $primaryActiveContent: #fff;
 $secondaryActiveContent: #000;
