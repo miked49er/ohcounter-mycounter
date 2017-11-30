@@ -191,7 +191,7 @@ body:after {
   box-shadow: 1px 2px 5px #333333;
   display: flex;
   position: relative;
-  background-color: #a40cbe;
+  background-color: #070303;
   border-radius: 100px;
   align-items: center;
   vertical-align: middle;
@@ -236,7 +236,7 @@ body:after {
 }
 /* line 44, ../lib/sass/_partials.scss */
 .player-selection .player-selection-input input[type=radio]:checked + label, .game-selection .game-selection-input input[type=radio]:checked + label {
-  color: #26e454;
+  color: #f7121f;
   background: #fff;
 }
 /* line 49, ../lib/sass/_partials.scss */
@@ -247,8 +247,8 @@ body:after {
 /* line 54, ../lib/sass/_partials.scss */
 .primary, .secondary, .tertiary {
   background-color: #fff;
-  color: #26e454;
-  border-bottom: solid medium #26e454;
+  color: #f7121f;
+  border-bottom: solid medium #f7121f;
 }
 
 /* line 60, ../lib/sass/_partials.scss */
@@ -402,7 +402,7 @@ header {
   left: 0;
   width: 100%;
   height: 50px;
-  background-color: #a40cbe;
+  background-color: #070303;
   z-index: 5;
 }
 /* line 11, ../lib/sass/_nav.scss */
@@ -435,7 +435,7 @@ header .menu-button {
 .logo {
   display: block;
   padding: 10px 15px;
-  background-color: #a40cbe;
+  background-color: #070303;
   color: #fff;
   margin: 0;
 }
@@ -547,24 +547,24 @@ header .menu-button {
 /* line 11, ../lib/sass/_button.scss */
 .rounded-button.primaryContent {
   border-color: #fff;
-  background-color: #a40cbe;
+  background-color: #070303;
   color: #fff;
 }
 /* line 16, ../lib/sass/_button.scss */
 .rounded-button.primaryContent:active {
   background-color: #fff;
-  color: #a40cbe;
+  color: #070303;
 }
 /* line 22, ../lib/sass/_button.scss */
 .rounded-button.secondaryContent {
   border-color: #fff;
-  background-color: #26e454;
+  background-color: #f7121f;
   color: #fff;
 }
 /* line 27, ../lib/sass/_button.scss */
 .rounded-button.secondaryContent:active {
   background-color: #fff;
-  color: #26e454;
+  color: #f7121f;
 }
 /* line 33, ../lib/sass/_button.scss */
 .rounded-button.tertiaryContent {
@@ -593,7 +593,7 @@ header .menu-button {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #26e454;
+  background-color: #f7121f;
 }
 
 /* line 16, ../lib/sass/_game-init.scss */
@@ -615,7 +615,7 @@ header .menu-button {
 }
 /* line 31, ../lib/sass/_game-init.scss */
 .player-names .player-name input {
-  background-color: #26e454;
+  background-color: #f7121f;
   color: #fff;
   border: none;
   border-bottom: solid thin #fff;
@@ -722,7 +722,7 @@ header .menu-button {
 
 /* line 37, ../lib/sass/_game.scss */
 .multi-counter {
-  border-top: solid thin #26e454;
+  border-top: solid thin #f7121f;
   width: 95%;
   margin: auto;
 }
@@ -758,7 +758,7 @@ header .menu-button {
 }
 /* line 70, ../lib/sass/_game.scss */
 .increment-group + .increment-group {
-  border-top: solid thin #26e454;
+  border-top: solid thin #f7121f;
 }
 
 /* line 75, ../lib/sass/_game.scss */
@@ -791,11 +791,11 @@ header .menu-button {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  border-bottom: solid medium #26e454;
+  border-bottom: solid medium #f7121f;
 }
 /* line 109, ../lib/sass/_game.scss */
 .tertiary:nth-of-type(2n - 1) {
-  border-right: solid medium #26e454;
+  border-right: solid medium #f7121f;
 }
 /* line 113, ../lib/sass/_game.scss */
 .tertiary .value-group {

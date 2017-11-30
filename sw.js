@@ -25,8 +25,7 @@ var urlsToCache = [
   baseURL + 'images/dice/d12.svg',
   baseURL + 'images/dice/d20.svg',
   baseURL + 'lib/json/game-list.json',
-  baseURL + 'lib/json/template.json',
-  baseURL + 'lib/json/game-creation-cookie-template.json'
+  baseURL + 'lib/json/game-creation-cookie-template.json',
   baseURL + 'lib/json/games/MTG-Commander.json',
   baseURL + 'lib/json/games/MTG-Standard.json',
   baseURL + 'lib/json/games/Munchkin.json',
@@ -35,8 +34,7 @@ var urlsToCache = [
   baseURL + 'template/fab.html',
   baseURL + 'template/game-select.html',
   baseURL + 'template/num-player-select.html',
-
-
+  baseURL + 'template/game.html'
 ];
 
 self.addEventListener('install', function(event) {
