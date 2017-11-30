@@ -22,7 +22,7 @@
 } // value-group
 
 .counter-value {
-  font-size: 1.8rem;
+  font-size: $counter-value-font-size;
   line-height: 120%;
   vertical-align: middle;
 } // .counter-value
@@ -47,6 +47,11 @@
   text-align: center;
   height: $increment-s-height;
 
+  .counter-value {
+    line-height: 100%;
+    padding-bottom: .35rem;
+  } // counter-value
+
   .loss, .gain {
     vertical-align: middle;
     line-height: $increment-s-height;
@@ -57,7 +62,7 @@
   display: block;
   text-align: center;
   overflow: hidden;
-  line-height: 120%;
+  line-height: $increment-line-height;
 
   .loss {
     float: left;
