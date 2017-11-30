@@ -425,14 +425,27 @@ header .menu-button {
   height: 100vh;
   background-color: #fff;
 }
+/* line 27, ../lib/sass/_nav.scss */
+#menu a {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 150%;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f7121f;
+  padding-left: 10px;
+  border-bottom: solid 2px #fff;
+}
 
-/* line 28, ../lib/sass/_nav.scss */
+/* line 41, ../lib/sass/_nav.scss */
 #menu-active {
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 31;
 }
 
-/* line 34, ../lib/sass/_nav.scss */
+/* line 47, ../lib/sass/_nav.scss */
 .logo {
   display: block;
   padding: 10px 15px;
