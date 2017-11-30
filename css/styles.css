@@ -1,4 +1,4 @@
-/* line 5, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -131,7 +131,7 @@ h2 {
   margin-bottom: .6rem;
 }
 
-/* line 21, ../../../../../var/lib/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -144,7 +144,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../var/lib/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+/* line 12, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 body:after {
   content: " ";
   display: block;
@@ -254,7 +254,7 @@ body:after {
 /* line 60, ../lib/sass/_partials.scss */
 .loss, .gain {
   width: 40%;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 /* line 65, ../lib/sass/_partials.scss */
@@ -707,7 +707,7 @@ header .menu-button {
 
 /* line 24, ../lib/sass/_game.scss */
 .counter-value {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 120%;
   vertical-align: middle;
 }
@@ -733,59 +733,64 @@ header .menu-button {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 40px;
+  height: 50px;
 }
 /* line 50, ../lib/sass/_game.scss */
+.single-counter .counter-value {
+  line-height: 100%;
+  padding-bottom: .35rem;
+}
+/* line 55, ../lib/sass/_game.scss */
 .single-counter .loss, .single-counter .gain {
   vertical-align: middle;
-  line-height: 40px;
+  line-height: 50px;
 }
 
-/* line 56, ../lib/sass/_game.scss */
+/* line 61, ../lib/sass/_game.scss */
 .increment-group {
   display: block;
   text-align: center;
   overflow: hidden;
-  line-height: 120%;
+  line-height: 200%;
 }
-/* line 62, ../lib/sass/_game.scss */
+/* line 67, ../lib/sass/_game.scss */
 .increment-group .loss {
   float: left;
 }
-/* line 66, ../lib/sass/_game.scss */
+/* line 71, ../lib/sass/_game.scss */
 .increment-group .gain {
   float: right;
 }
-/* line 70, ../lib/sass/_game.scss */
+/* line 75, ../lib/sass/_game.scss */
 .increment-group + .increment-group {
   border-top: solid thin #f7121f;
 }
 
-/* line 75, ../lib/sass/_game.scss */
+/* line 80, ../lib/sass/_game.scss */
 .primary {
   width: 100%;
 }
-/* line 79, ../lib/sass/_game.scss */
+/* line 84, ../lib/sass/_game.scss */
 .primary .value-group {
   display: block;
   text-align: center;
 }
-/* line 85, ../lib/sass/_game.scss */
+/* line 90, ../lib/sass/_game.scss */
 .primary .counter-value {
   font-size: 2.5rem;
   vertical-align: middle;
 }
-/* line 90, ../lib/sass/_game.scss */
+/* line 95, ../lib/sass/_game.scss */
 .primary .single-counter {
-  height: calc(40px + 15px);
+  height: calc(50px + 15px);
 }
 
-/* line 95, ../lib/sass/_game.scss */
+/* line 100, ../lib/sass/_game.scss */
 .secondary {
   width: 100%;
 }
 
-/* line 104, ../lib/sass/_game.scss */
+/* line 109, ../lib/sass/_game.scss */
 .tertiary {
   width: 50%;
   float: left;
@@ -793,24 +798,24 @@ header .menu-button {
   padding-right: 0.83333%;
   border-bottom: solid medium #f7121f;
 }
-/* line 109, ../lib/sass/_game.scss */
+/* line 114, ../lib/sass/_game.scss */
 .tertiary:nth-of-type(2n - 1) {
   border-right: solid medium #f7121f;
 }
-/* line 113, ../lib/sass/_game.scss */
+/* line 118, ../lib/sass/_game.scss */
 .tertiary .value-group {
   width: 40%;
 }
-/* line 117, ../lib/sass/_game.scss */
+/* line 122, ../lib/sass/_game.scss */
 .tertiary .loss, .tertiary .gain {
   width: 30%;
 }
 
-/* line 122, ../lib/sass/_game.scss */
+/* line 127, ../lib/sass/_game.scss */
 .player {
   display: none;
 }
-/* line 125, ../lib/sass/_game.scss */
+/* line 130, ../lib/sass/_game.scss */
 .player.active {
   display: block;
 }
