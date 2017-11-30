@@ -261,9 +261,10 @@ body:after {
 .loss::before, .gain::after {
   font-size: .8rem;
   vertical-align: middle;
+  color: inherit;
 }
 
-/* line 70, ../lib/sass/_partials.scss */
+/* line 71, ../lib/sass/_partials.scss */
 .primary .value-group, .secondary .value-group {
   margin: auto;
 }
