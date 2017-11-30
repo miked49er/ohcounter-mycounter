@@ -1,7 +1,7 @@
 <script id="increment-group-template" type="x-template">
   <div class="increment-group">
-    <span class="loss"></span>
-    <span class="gain"></span>
+    <span class="loss" onclick="decrementCounter(this);"></span>
+    <span class="gain" onclick="incrementCounter(this);"></span>
   </div>
 </script>
 
@@ -21,11 +21,11 @@
   <div class="primary">
     <h5 class="counter-name"></h5>
     <div class="single-counter">
-      <span class="loss"></span>
+      <span class="loss" onclick="decrementCounter(this);"></span>
       <div class="value-group">
         <h4 class="counter-value"></h4>
       </div>
-      <span class="gain"></span>
+      <span class="gain" onclick="incrementCounter(this);"></span>
     </div>
   </div>
 </script>
@@ -37,14 +37,7 @@
       <h4 class="counter-value"></h4>
     </div>
     <div class="multi-counter">
-      <div class="increment-group">
-        <span class="loss"></span>
-        <span class="gain"></span>
-      </div>
-      <div class="increment-group">
-        <span class="loss"></span>
-        <span class="gain"></span>
-      </div>
+    
     </div>
   </div>
 </script>
@@ -53,11 +46,11 @@
   <div class="secondary">
     <h5 class="counter-name"></h5>
     <div class="single-counter">
-      <span class="loss"></span>
+      <span class="loss" onclick="decrementCounter(this);"></span>
       <div class="value-group">
         <h4 class="counter-value"></h4>
       </div>
-      <span class="gain"></span>
+      <span class="gain" onclick="incrementCounter(this);"></span>
     </div>
   </div>
 </script>
@@ -66,11 +59,11 @@
   <div class="tertiary">
     <h5 class="counter-name"></h5>
     <div class="single-counter">
-      <span class="loss"></span>
+      <span class="loss" onclick="decrementCounter(this);"></span>
       <div class="value-group">
         <h4 class="counter-value"></h4>
       </div>
-      <span class="gain"></span>
+      <span class="gain" onclick="incrementCounter(this);"></span>
     </div>
   </div>
 </script>
