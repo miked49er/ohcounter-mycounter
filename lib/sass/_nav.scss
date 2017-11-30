@@ -23,6 +23,19 @@ header {
     width: 90%;
     height: 100vh;
     background-color: $tertiary;
+
+    a {
+      display: block;
+      width: 100%;
+      font-size: 1.5rem;
+      line-height: 150%;
+      vertical-align: middle;
+      text-decoration: none;
+      color: $secondaryContent;
+      background-color: $secondary;
+      padding-left: 10px;
+      border-bottom: solid 2px $tertiary;
+    } // a
 } // menu
 
 #menu-active {
