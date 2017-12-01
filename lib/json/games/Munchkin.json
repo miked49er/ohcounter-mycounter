@@ -22,7 +22,11 @@
       "min": 0,
       "start": 1,
       "value": 1,
-      "increments": 1,
+      "increments": [
+        5,
+        3,
+        1
+      ],
       "announce": false,
       "otherPlayers": false
     }
