@@ -215,19 +215,19 @@ body:after {
 }
 
 /* line 25, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input, .game-selection .game-selection-input {
+.player-selection .player-selection-input, .game-selection .game-selection-input, .player-tabs .player-tab {
   overflow: hidden;
   display: inline-block;
   cursor: pointer;
 }
 /* line 30, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input input[type=radio], .game-selection .game-selection-input input[type=radio] {
+.player-selection .player-selection-input input[type=radio], .game-selection .game-selection-input input[type=radio], .player-tabs .player-tab input[type=radio] {
   position: absolute;
   visibility: hidden;
   display: none;
 }
 /* line 36, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input label, .game-selection .game-selection-input label {
+.player-selection .player-selection-input label, .game-selection .game-selection-input label, .player-tabs .player-tab label {
   color: #fff;
   display: inline-block;
   cursor: pointer;
@@ -235,12 +235,12 @@ body:after {
   padding: 5px 20px;
 }
 /* line 44, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input input[type=radio]:checked + label, .game-selection .game-selection-input input[type=radio]:checked + label {
+.player-selection .player-selection-input input[type=radio]:checked + label, .game-selection .game-selection-input input[type=radio]:checked + label, .player-tabs .player-tab input[type=radio]:checked + label {
   color: #f7121f;
   background: #fff;
 }
 /* line 49, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input label + input[type=radio] + label, .game-selection .game-selection-input label + input[type=radio] + label {
+.player-selection .player-selection-input label + input[type=radio] + label, .game-selection .game-selection-input label + input[type=radio] + label, .player-tabs .player-tab label + input[type=radio] + label {
   border-left: solid 3px #fff;
 }
 
@@ -545,6 +545,74 @@ header .menu-button {
 /* line 27, ../lib/sass/_radio-groups.scss */
 .game-selection .game-selection-input .game + .game {
   border-top: solid 3px #fff;
+}
+
+/* line 33, ../lib/sass/_radio-groups.scss */
+.player-tabs {
+  display: block;
+  text-align: center;
+  border: solid 3px #f7121f;
+}
+/* line 38, ../lib/sass/_radio-groups.scss */
+.player-tabs .player-tab {
+  margin-bottom: -4px;
+  height: 30px;
+}
+/* line 43, ../lib/sass/_radio-groups.scss */
+.player-tabs .player-tab label {
+  display: block;
+  color: #f7121f;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+}
+/* line 52, ../lib/sass/_radio-groups.scss */
+.player-tabs .player-tab input[type=radio]:checked + label {
+  color: #fff;
+  background: #f7121f;
+}
+/* line 59, ../lib/sass/_radio-groups.scss */
+.player-tabs .player-tab + .player-tab {
+  border-left: solid 3px #f7121f;
+}
+
+/* line 68, ../lib/sass/_radio-groups.scss */
+.tabGroup1 .player-tab-1 {
+  width: 100%;
+}
+/* line 72, ../lib/sass/_radio-groups.scss */
+.tabGroup1 .player-tab-2 {
+  width: 50%;
+}
+/* line 76, ../lib/sass/_radio-groups.scss */
+.tabGroup1 .player-tab-3 {
+  width: 33.33%;
+}
+/* line 80, ../lib/sass/_radio-groups.scss */
+.tabGroup1 .player-tab-4, .tabGroup1 .player-tab-5, .tabGroup1 .player-tab-6, .tabGroup1 .player-tab-7, .tabGroup1 .player-tab-8 {
+  width: 25%;
+}
+
+/* line 86, ../lib/sass/_radio-groups.scss */
+.tabGroup2 {
+  border-top: none;
+}
+/* line 91, ../lib/sass/_radio-groups.scss */
+.tabGroup2 .player-tab-5 {
+  width: 100%;
+}
+/* line 95, ../lib/sass/_radio-groups.scss */
+.tabGroup2 .player-tab-6 {
+  width: 50%;
+}
+/* line 99, ../lib/sass/_radio-groups.scss */
+.tabGroup2 .player-tab-7 {
+  width: 33.33%;
+}
+/* line 103, ../lib/sass/_radio-groups.scss */
+.tabGroup2 .player-tab-8 {
+  width: 25%;
 }
 
 /* line 1, ../lib/sass/_button.scss */
