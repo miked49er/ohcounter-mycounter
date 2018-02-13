@@ -29,3 +29,79 @@
     } // game + game
   } // game-selection-input
 } // game-selection
+
+.player-tabs {
+  display: block;
+  text-align: center;
+  border: solid $radio-border-width $secondary;
+
+  .player-tab {
+    @extend %txtRadios;
+    margin-bottom: $player-tab-margin;
+    height: $player-tab-height;
+
+    label {
+      display: block;
+      color: $secondary;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      line-height: $player-tab-height;
+    } // label
+
+    input[type=radio]:checked + label{
+      color: $radio-group-color;
+      background: $secondary;
+    } // input[type=radio]:checked + label
+
+  } // player-tab
+
+  .player-tab + .player-tab {
+    border-left: solid $radio-border-width $secondary;
+  } // player-tab + player-tab
+} // player-tabs
+
+.tabGroup1 {
+
+  .player-tab {
+
+    &-1 {
+      width: 100%;
+    } // player-tab-1
+
+    &-2 {
+      width: 50%;
+    } // player-tab-2
+
+    &-3 {
+      width: 33.33%;
+    } // player-tab-3
+
+    &-4, &-5, &-6, &-7, &-8 {
+      width: 25%;
+    } // player-tab-4, player-tab-5, player-tab-6, player-tab-7, player-tab-8,
+  } // player-tab
+} // tabGroup1
+
+.tabGroup2 {
+  border-top: none;
+
+  .player-tab {
+
+    &-5 {
+      width: 100%;
+    } // player-tab-5
+
+    &-6 {
+      width: 50%;
+    } // player-tab-6
+
+    &-7 {
+      width: 33.33%;
+    } // player-tab-7
+
+    &-8 {
+      width: 25%;
+    } // player-tab-8
+  } // player-tab
+} // tabGroup2
