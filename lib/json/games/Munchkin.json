@@ -4,7 +4,7 @@
   "primary": {
     "name": "Level",
     "id": "level",
-    "max": 10,
+    "max": null,
     "min": 1,
     "start": 1,
     "value": 1,
