@@ -1,0 +1,14 @@
+{
+  "options": [
+    {
+      "id": 0,
+      "name": "Continue",
+      "value": "resume"
+    },
+    {
+      "id": 1,
+      "name": "New Game",
+      "value": "newGame"
+    }
+  ]
+}
