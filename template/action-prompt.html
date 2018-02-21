@@ -1,0 +1,18 @@
+<script id="action-prompt-template" type="x-template">
+  <div class="group">
+    <div class="vertical-selection">
+      <h2>What would you like to do?</h2>
+      <div id="action-selection" class="vertical-selection-input">
+
+      </div> <!-- vertical-selection-input -->
+      <button class="rounded-button secondaryContent center bottom" onclick="buttonActionPrompt()">Select</button>
+    </div> <!-- vertical-selection -->
+  </div> <!-- group -->
+</script>
+
+<script id="action-template" type="x-template">
+  <div class="item">
+    <input type="radio" id="action-option" name="action-prompt-selection" value="action">
+    <label id="action-option-label" for="action-option">Action Option</label>
+  </div>
+</script>
