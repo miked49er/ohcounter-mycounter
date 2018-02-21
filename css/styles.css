@@ -215,19 +215,19 @@ body:after {
 }
 
 /* line 25, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input, .game-selection .game-selection-input, .player-tabs .player-tab {
+.player-selection .player-selection-input, .vertical-selection .vertical-selection-input, .player-tabs .player-tab {
   overflow: hidden;
   display: inline-block;
   cursor: pointer;
 }
 /* line 30, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input input[type=radio], .game-selection .game-selection-input input[type=radio], .player-tabs .player-tab input[type=radio] {
+.player-selection .player-selection-input input[type=radio], .vertical-selection .vertical-selection-input input[type=radio], .player-tabs .player-tab input[type=radio] {
   position: absolute;
   visibility: hidden;
   display: none;
 }
 /* line 36, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input label, .game-selection .game-selection-input label, .player-tabs .player-tab label {
+.player-selection .player-selection-input label, .vertical-selection .vertical-selection-input label, .player-tabs .player-tab label {
   color: #fff;
   display: inline-block;
   cursor: pointer;
@@ -235,12 +235,12 @@ body:after {
   padding: 5px 20px;
 }
 /* line 44, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input input[type=radio]:checked + label, .game-selection .game-selection-input input[type=radio]:checked + label, .player-tabs .player-tab input[type=radio]:checked + label {
+.player-selection .player-selection-input input[type=radio]:checked + label, .vertical-selection .vertical-selection-input input[type=radio]:checked + label, .player-tabs .player-tab input[type=radio]:checked + label {
   color: #f7121f;
   background: #fff;
 }
 /* line 49, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input label + input[type=radio] + label, .game-selection .game-selection-input label + input[type=radio] + label, .player-tabs .player-tab label + input[type=radio] + label {
+.player-selection .player-selection-input label + input[type=radio] + label, .vertical-selection .vertical-selection-input label + input[type=radio] + label, .player-tabs .player-tab label + input[type=radio] + label {
   border-left: solid 3px #fff;
 }
 
@@ -528,22 +528,22 @@ header .menu-button {
 }
 
 /* line 13, ../lib/sass/_radio-groups.scss */
-.game-selection {
+.vertical-selection {
   display: block;
   text-align: center;
 }
 /* line 17, ../lib/sass/_radio-groups.scss */
-.game-selection .game-selection-input {
+.vertical-selection .vertical-selection-input {
   border: solid 3px #fff;
   border-radius: 10px;
   margin: 10px auto;
 }
 /* line 23, ../lib/sass/_radio-groups.scss */
-.game-selection .game-selection-input label {
+.vertical-selection .vertical-selection-input label {
   display: block;
 }
 /* line 27, ../lib/sass/_radio-groups.scss */
-.game-selection .game-selection-input .game + .game {
+.vertical-selection .vertical-selection-input .item + .item {
   border-top: solid 3px #fff;
 }
 
