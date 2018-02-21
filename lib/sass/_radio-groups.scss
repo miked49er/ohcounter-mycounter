@@ -10,11 +10,11 @@
   } // player-selection-input
 } // player-selection
 
-.game-selection {
+.vertical-selection {
   display: block;
   text-align: center;
 
-  .game-selection-input {
+  .vertical-selection-input {
     @extend %txtRadios;
     border: solid $radio-border-width $radio-group-color;
     border-radius: $radio-border-radius;
@@ -24,11 +24,11 @@
       display: block;
     } // label
 
-    .game + .game {
+    .item + .item {
       border-top: solid $radio-border-width $radio-group-color;
     } // game + game
-  } // game-selection-input
-} // game-selection
+  } // vertical-selection-input
+} // vertical-selection
 
 .player-tabs {
   display: block;
