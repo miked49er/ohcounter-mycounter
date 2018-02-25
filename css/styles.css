@@ -161,11 +161,6 @@ body:after {
   display: none !important;
 }
 
-/* line 33, ../lib/sass/_layout.scss */
-.center {
-  margin: auto;
-}
-
 /* line 1, ../lib/sass/_spacing.scss */
 .topGap {
   margin-top: 40px;
@@ -178,6 +173,21 @@ body:after {
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+
+/* line 13, ../lib/sass/_spacing.scss */
+.center {
+  margin: auto;
+}
+
+/* line 17, ../lib/sass/_spacing.scss */
+.left {
+  right: 40%;
+}
+
+/* line 21, ../lib/sass/_spacing.scss */
+.right {
+  left: 40%;
 }
 
 /* line 1, ../lib/sass/_partials.scss */
