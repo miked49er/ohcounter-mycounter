@@ -253,37 +253,40 @@ body:after {
 .horizontal-selection .horizontal-selection-input input[type=checkbox]:checked + label, .vertical-selection .vertical-selection-input input[type=checkbox]:checked + label, .horizontal-name-selection .item input[type=checkbox]:checked + label {
   color: #f7121f;
   background: #fff;
+  border-right: solid thin #f7121f;
+  border-bottom: solid thin #f7121f;
+  border-style: groove;
 }
-/* line 64, ../lib/sass/_partials.scss */
+/* line 67, ../lib/sass/_partials.scss */
 .horizontal-selection .horizontal-selection-input label + input[type=checkbox] + label, .vertical-selection .vertical-selection-input label + input[type=checkbox] + label, .horizontal-name-selection .item label + input[type=checkbox] + label {
   border-left: solid 3px #fff;
 }
-/* line 68, ../lib/sass/_partials.scss */
+/* line 71, ../lib/sass/_partials.scss */
 .horizontal-selection .horizontal-selection-input .item + .item, .vertical-selection .vertical-selection-input .item + .item, .horizontal-name-selection .item .item + .item {
   border-left: solid 3px #fff;
 }
 
-/* line 73, ../lib/sass/_partials.scss */
+/* line 76, ../lib/sass/_partials.scss */
 .primary, .secondary, .tertiary {
   background-color: #fff;
   color: #f7121f;
   border-bottom: solid medium #f7121f;
 }
 
-/* line 79, ../lib/sass/_partials.scss */
+/* line 82, ../lib/sass/_partials.scss */
 .loss, .gain {
   width: 40%;
   font-size: 1.8rem;
 }
 
-/* line 84, ../lib/sass/_partials.scss */
+/* line 87, ../lib/sass/_partials.scss */
 .loss::before, .gain::after {
   font-size: .8rem;
   vertical-align: middle;
   color: inherit;
 }
 
-/* line 90, ../lib/sass/_partials.scss */
+/* line 93, ../lib/sass/_partials.scss */
 .primary .value-group, .secondary .value-group {
   margin: auto;
 }
