@@ -1,14 +1,13 @@
-.player-selection {
+.horizontal-selection {
   display: block;
   text-align: center;
 
-  .player-selection-input {
+  .horizontal-selection-input {
     @extend %txtRadios;
     border: solid $radio-border-width $radio-group-color;
-    border-radius: $radio-border-radius;
     margin: $radio-player-margin;
-  } // player-selection-input
-} // player-selection
+  } // horizontal-selection-input
+} // horizontal-selection
 
 .vertical-selection {
   display: block;
@@ -17,7 +16,6 @@
   .vertical-selection-input {
     @extend %txtRadios;
     border: solid $radio-border-width $radio-group-color;
-    border-radius: $radio-border-radius;
     margin: $radio-game-margin;
 
     label {
@@ -25,28 +23,94 @@
     } // label
 
     .item + .item {
+      border-left: none;
       border-top: solid $radio-border-width $radio-group-color;
-    } // game + game
+    } // item + item
   } // vertical-selection-input
 } // vertical-selection
 
-.player-tabs {
+.horizontal-name-selection {
   display: block;
   text-align: center;
-  border: solid $radio-border-width $secondary;
+  border: solid $radio-border-width $radio-group-color;
 
-  .player-tab {
+  .item {
     @extend %txtRadios;
     margin-bottom: $player-tab-margin;
     height: $player-tab-height;
 
     label {
       display: block;
-      color: $secondary;
       padding: 0;
       width: 100%;
       height: 100%;
       line-height: $player-tab-height;
+    } // label
+  } // item
+
+  .item + .item {
+    border-left: solid $radio-border-width $radio-group-color;
+  } // item + item
+} // horizontal-name-selection
+
+.tabGroup1 {
+
+  .item {
+
+    &-1 {
+      width: 100%;
+    } // item-1
+
+    &-2 {
+      width: 50%;
+    } // item-2
+
+    &-3 {
+      width: 33.33%;
+    } // item-3
+
+    &-4, &-5, &-6, &-7, &-8 {
+      width: 25%;
+    } // item-4, item-5, item-6, item-7, item-8,
+  } // item
+} // tabGroup1
+
+.tabGroup2 {
+  border-top: none;
+
+  .item {
+
+    &-5 {
+      width: 100%;
+    } // item-5
+
+    &-6 {
+      width: 50%;
+    } // item-6
+
+    &-7 {
+      width: 33.33%;
+    } // item-7
+
+    &-8 {
+      width: 25%;
+    } // item-8
+  } // item
+} // tabGroup2
+
+.rounded {
+  border-radius: $radio-border-radius;
+} // rounded
+
+.input-invert {
+  border-color: $secondary;
+  background: $radio-group-color;
+
+  .item {
+    border-color: $secondary;
+
+    label {
+      color: $secondary;
     } // label
 
     input[type=radio]:checked + label{
@@ -54,54 +118,22 @@
       background: $secondary;
     } // input[type=radio]:checked + label
 
-  } // player-tab
+    input[type=checkbox]:checked + label{
+      color: $radio-group-color;
+      background: $secondary;
+    } // input[type=checkbox]:checked + label
+  } // item
 
-  .player-tab + .player-tab {
-    border-left: solid $radio-border-width $secondary;
-  } // player-tab + player-tab
-} // player-tabs
+  .item + .item {
+    border-color: $secondary;
+  } // item + item
+} // input-invert
 
-.tabGroup1 {
+#rand-player-selection {
+  width: 80%;
+  text-align: center;
 
-  .player-tab {
-
-    &-1 {
-      width: 100%;
-    } // player-tab-1
-
-    &-2 {
-      width: 50%;
-    } // player-tab-2
-
-    &-3 {
-      width: 33.33%;
-    } // player-tab-3
-
-    &-4, &-5, &-6, &-7, &-8 {
-      width: 25%;
-    } // player-tab-4, player-tab-5, player-tab-6, player-tab-7, player-tab-8,
-  } // player-tab
-} // tabGroup1
-
-.tabGroup2 {
-  border-top: none;
-
-  .player-tab {
-
-    &-5 {
-      width: 100%;
-    } // player-tab-5
-
-    &-6 {
-      width: 50%;
-    } // player-tab-6
-
-    &-7 {
-      width: 33.33%;
-    } // player-tab-7
-
-    &-8 {
-      width: 25%;
-    } // player-tab-8
-  } // player-tab
-} // tabGroup2
+  .tabGroup1 + .tabGroup1 {
+    border-top: none;
+  } // tabGroup1 + tabGroup1
+} // rand-player-selection
