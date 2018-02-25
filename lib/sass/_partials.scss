@@ -33,6 +33,12 @@
     display: none;
   } // input[type=radio]
 
+  input[type=checkbox] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  } // input[type=checkbox]
+
   label {
     color: $radio-group-color;
     display: inline-block;
@@ -49,6 +55,19 @@
   label + input[type=radio] + label {
     border-left: solid $radio-border-width $radio-group-color;
   } // label + input[type=radio] + label
+
+  input[type=checkbox]:checked + label{
+    color: $secondary;
+    background: $radio-group-color;
+  } // input[type=checkbox]:checked + label
+
+  label + input[type=checkbox] + label {
+    border-left: solid $radio-border-width $radio-group-color;
+  } // label + input[type=checkbox] + label
+
+  .item + .item {
+    border-left: solid $radio-border-width $radio-group-color;
+  } // item + item
 } // txtRadios
 
 %counter {
