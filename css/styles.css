@@ -215,56 +215,75 @@ body:after {
 }
 
 /* line 25, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input, .vertical-selection .vertical-selection-input, .player-tabs .player-tab {
+.horizontal-selection .horizontal-selection-input, .vertical-selection .vertical-selection-input, .horizontal-name-selection .item {
   overflow: hidden;
   display: inline-block;
   cursor: pointer;
 }
 /* line 30, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input input[type=radio], .vertical-selection .vertical-selection-input input[type=radio], .player-tabs .player-tab input[type=radio] {
+.horizontal-selection .horizontal-selection-input input[type=radio], .vertical-selection .vertical-selection-input input[type=radio], .horizontal-name-selection .item input[type=radio] {
   position: absolute;
   visibility: hidden;
   display: none;
 }
 /* line 36, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input label, .vertical-selection .vertical-selection-input label, .player-tabs .player-tab label {
+.horizontal-selection .horizontal-selection-input input[type=checkbox], .vertical-selection .vertical-selection-input input[type=checkbox], .horizontal-name-selection .item input[type=checkbox] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+/* line 42, ../lib/sass/_partials.scss */
+.horizontal-selection .horizontal-selection-input label, .vertical-selection .vertical-selection-input label, .horizontal-name-selection .item label {
   color: #fff;
   display: inline-block;
   cursor: pointer;
   font-weight: bold;
   padding: 5px 20px;
 }
-/* line 44, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input input[type=radio]:checked + label, .vertical-selection .vertical-selection-input input[type=radio]:checked + label, .player-tabs .player-tab input[type=radio]:checked + label {
+/* line 50, ../lib/sass/_partials.scss */
+.horizontal-selection .horizontal-selection-input input[type=radio]:checked + label, .vertical-selection .vertical-selection-input input[type=radio]:checked + label, .horizontal-name-selection .item input[type=radio]:checked + label {
   color: #f7121f;
   background: #fff;
 }
-/* line 49, ../lib/sass/_partials.scss */
-.player-selection .player-selection-input label + input[type=radio] + label, .vertical-selection .vertical-selection-input label + input[type=radio] + label, .player-tabs .player-tab label + input[type=radio] + label {
+/* line 55, ../lib/sass/_partials.scss */
+.horizontal-selection .horizontal-selection-input label + input[type=radio] + label, .vertical-selection .vertical-selection-input label + input[type=radio] + label, .horizontal-name-selection .item label + input[type=radio] + label {
+  border-left: solid 3px #fff;
+}
+/* line 59, ../lib/sass/_partials.scss */
+.horizontal-selection .horizontal-selection-input input[type=checkbox]:checked + label, .vertical-selection .vertical-selection-input input[type=checkbox]:checked + label, .horizontal-name-selection .item input[type=checkbox]:checked + label {
+  color: #f7121f;
+  background: #fff;
+}
+/* line 64, ../lib/sass/_partials.scss */
+.horizontal-selection .horizontal-selection-input label + input[type=checkbox] + label, .vertical-selection .vertical-selection-input label + input[type=checkbox] + label, .horizontal-name-selection .item label + input[type=checkbox] + label {
+  border-left: solid 3px #fff;
+}
+/* line 68, ../lib/sass/_partials.scss */
+.horizontal-selection .horizontal-selection-input .item + .item, .vertical-selection .vertical-selection-input .item + .item, .horizontal-name-selection .item .item + .item {
   border-left: solid 3px #fff;
 }
 
-/* line 54, ../lib/sass/_partials.scss */
+/* line 73, ../lib/sass/_partials.scss */
 .primary, .secondary, .tertiary {
   background-color: #fff;
   color: #f7121f;
   border-bottom: solid medium #f7121f;
 }
 
-/* line 60, ../lib/sass/_partials.scss */
+/* line 79, ../lib/sass/_partials.scss */
 .loss, .gain {
   width: 40%;
   font-size: 1.8rem;
 }
 
-/* line 65, ../lib/sass/_partials.scss */
+/* line 84, ../lib/sass/_partials.scss */
 .loss::before, .gain::after {
   font-size: .8rem;
   vertical-align: middle;
   color: inherit;
 }
 
-/* line 71, ../lib/sass/_partials.scss */
+/* line 90, ../lib/sass/_partials.scss */
 .primary .value-group, .secondary .value-group {
   margin: auto;
 }
@@ -516,103 +535,139 @@ header .menu-button {
 }
 
 /* line 1, ../lib/sass/_radio-groups.scss */
-.player-selection {
+.horizontal-selection {
   display: block;
   text-align: center;
 }
 /* line 5, ../lib/sass/_radio-groups.scss */
-.player-selection .player-selection-input {
+.horizontal-selection .horizontal-selection-input {
   border: solid 3px #fff;
-  border-radius: 10px;
   margin: 10px auto;
 }
 
-/* line 13, ../lib/sass/_radio-groups.scss */
+/* line 12, ../lib/sass/_radio-groups.scss */
 .vertical-selection {
   display: block;
   text-align: center;
 }
-/* line 17, ../lib/sass/_radio-groups.scss */
+/* line 16, ../lib/sass/_radio-groups.scss */
 .vertical-selection .vertical-selection-input {
   border: solid 3px #fff;
-  border-radius: 10px;
   margin: 10px auto;
 }
-/* line 23, ../lib/sass/_radio-groups.scss */
+/* line 21, ../lib/sass/_radio-groups.scss */
 .vertical-selection .vertical-selection-input label {
   display: block;
 }
-/* line 27, ../lib/sass/_radio-groups.scss */
+/* line 25, ../lib/sass/_radio-groups.scss */
 .vertical-selection .vertical-selection-input .item + .item {
+  border-left: none;
   border-top: solid 3px #fff;
 }
 
-/* line 33, ../lib/sass/_radio-groups.scss */
-.player-tabs {
+/* line 32, ../lib/sass/_radio-groups.scss */
+.horizontal-name-selection {
   display: block;
   text-align: center;
-  border: solid 3px #f7121f;
+  border: solid 3px #fff;
 }
-/* line 38, ../lib/sass/_radio-groups.scss */
-.player-tabs .player-tab {
+/* line 37, ../lib/sass/_radio-groups.scss */
+.horizontal-name-selection .item {
   margin-bottom: -4px;
   height: 30px;
 }
-/* line 43, ../lib/sass/_radio-groups.scss */
-.player-tabs .player-tab label {
+/* line 42, ../lib/sass/_radio-groups.scss */
+.horizontal-name-selection .item label {
   display: block;
-  color: #f7121f;
   padding: 0;
   width: 100%;
   height: 100%;
   line-height: 30px;
 }
-/* line 52, ../lib/sass/_radio-groups.scss */
-.player-tabs .player-tab input[type=radio]:checked + label {
-  color: #fff;
-  background: #f7121f;
-}
-/* line 59, ../lib/sass/_radio-groups.scss */
-.player-tabs .player-tab + .player-tab {
-  border-left: solid 3px #f7121f;
+/* line 51, ../lib/sass/_radio-groups.scss */
+.horizontal-name-selection .item + .item {
+  border-left: solid 3px #fff;
 }
 
-/* line 68, ../lib/sass/_radio-groups.scss */
-.tabGroup1 .player-tab-1 {
+/* line 60, ../lib/sass/_radio-groups.scss */
+.tabGroup1 .item-1 {
   width: 100%;
 }
-/* line 72, ../lib/sass/_radio-groups.scss */
-.tabGroup1 .player-tab-2 {
+/* line 64, ../lib/sass/_radio-groups.scss */
+.tabGroup1 .item-2 {
   width: 50%;
 }
-/* line 76, ../lib/sass/_radio-groups.scss */
-.tabGroup1 .player-tab-3 {
+/* line 68, ../lib/sass/_radio-groups.scss */
+.tabGroup1 .item-3 {
   width: 33.33%;
 }
-/* line 80, ../lib/sass/_radio-groups.scss */
-.tabGroup1 .player-tab-4, .tabGroup1 .player-tab-5, .tabGroup1 .player-tab-6, .tabGroup1 .player-tab-7, .tabGroup1 .player-tab-8 {
+/* line 72, ../lib/sass/_radio-groups.scss */
+.tabGroup1 .item-4, .tabGroup1 .item-5, .tabGroup1 .item-6, .tabGroup1 .item-7, .tabGroup1 .item-8 {
   width: 25%;
 }
 
-/* line 86, ../lib/sass/_radio-groups.scss */
+/* line 78, ../lib/sass/_radio-groups.scss */
 .tabGroup2 {
   border-top: none;
 }
-/* line 91, ../lib/sass/_radio-groups.scss */
-.tabGroup2 .player-tab-5 {
+/* line 83, ../lib/sass/_radio-groups.scss */
+.tabGroup2 .item-5 {
   width: 100%;
 }
-/* line 95, ../lib/sass/_radio-groups.scss */
-.tabGroup2 .player-tab-6 {
+/* line 87, ../lib/sass/_radio-groups.scss */
+.tabGroup2 .item-6 {
   width: 50%;
 }
-/* line 99, ../lib/sass/_radio-groups.scss */
-.tabGroup2 .player-tab-7 {
+/* line 91, ../lib/sass/_radio-groups.scss */
+.tabGroup2 .item-7 {
   width: 33.33%;
 }
-/* line 103, ../lib/sass/_radio-groups.scss */
-.tabGroup2 .player-tab-8 {
+/* line 95, ../lib/sass/_radio-groups.scss */
+.tabGroup2 .item-8 {
   width: 25%;
+}
+
+/* line 101, ../lib/sass/_radio-groups.scss */
+.rounded {
+  border-radius: 10px;
+}
+
+/* line 105, ../lib/sass/_radio-groups.scss */
+.input-invert {
+  border-color: #f7121f;
+  background: #fff;
+}
+/* line 109, ../lib/sass/_radio-groups.scss */
+.input-invert .item {
+  border-color: #f7121f;
+}
+/* line 112, ../lib/sass/_radio-groups.scss */
+.input-invert .item label {
+  color: #f7121f;
+}
+/* line 116, ../lib/sass/_radio-groups.scss */
+.input-invert .item input[type=radio]:checked + label {
+  color: #fff;
+  background: #f7121f;
+}
+/* line 121, ../lib/sass/_radio-groups.scss */
+.input-invert .item input[type=checkbox]:checked + label {
+  color: #fff;
+  background: #f7121f;
+}
+/* line 127, ../lib/sass/_radio-groups.scss */
+.input-invert .item + .item {
+  border-color: #f7121f;
+}
+
+/* line 132, ../lib/sass/_radio-groups.scss */
+#rand-player-selection {
+  width: 80%;
+  text-align: center;
+}
+/* line 136, ../lib/sass/_radio-groups.scss */
+#rand-player-selection .tabGroup1 + .tabGroup1 {
+  border-top: none;
 }
 
 /* line 1, ../lib/sass/_button.scss */
