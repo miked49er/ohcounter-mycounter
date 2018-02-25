@@ -59,6 +59,9 @@
   input[type=checkbox]:checked + label{
     color: $secondary;
     background: $radio-group-color;
+    border-right: solid thin $secondary;
+    border-bottom: solid thin $secondary;
+    border-style: groove;
   } // input[type=checkbox]:checked + label
 
   label + input[type=checkbox] + label {
