@@ -9,3 +9,15 @@
   right: 0;
   margin: 0 auto;
 } // bottom
+
+.center {
+  margin: auto;
+} // center
+
+.left {
+  right: $spacing-offset;
+} // left
+
+.right {
+  left: $spacing-offset;
+} // right
