@@ -1,0 +1,63 @@
+.alert {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  background-color: $tertiary;
+  color: $tertiaryContent;
+  z-index: $z-alert;
+  width: $alert-width;
+  margin: auto;
+  font-size: 1.3rem;
+
+  .title {
+    background-color: $primary;
+    color: $primaryContent;
+    padding: $alert-title-padding;
+    line-height: 130%;
+  } // title
+
+  .message {
+    padding: $alert-message-padding;
+    line-height: 120%;
+  } // message
+
+  button {
+    font-size: 1.1rem;
+    margin: $alert-button-margin;
+    padding: $alert-button-padding;
+    background-color: $primary;
+    color: $primaryContent;
+    outline: none;
+    border: none;
+    width: $alert-button-width;
+  } // button
+
+  &-error {
+
+    .title, button {
+      background-color: $alert-error-bg;
+      color: $alert-error-color;
+    } // title
+  } // alert-error\
+
+  &-anounce {
+    text-align: center;
+
+    .title {
+      font-size: 1.1rem;
+      font-weight: thin;
+    } // title
+
+    .message {
+      font-size: 2.3rem;
+    } // message
+  } // alert-anounce
+} // alert
+
+#alert-active {
+  @extend %activeToggle;
+  background-color: $alert-blur;
+  z-index: $z-alert-blur;
+} // alert-active
