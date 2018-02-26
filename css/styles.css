@@ -210,7 +210,7 @@ body:after {
 }
 
 /* line 14, ../lib/sass/_partials.scss */
-#menu-active, #fab-menu-items-active {
+#menu-active, #fab-menu-items-active, #alert-active {
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
@@ -968,4 +968,66 @@ header .menu-button {
 /* line 130, ../lib/sass/_game.scss */
 .player.active {
   display: block;
+}
+
+/* line 1, ../lib/sass/_alert.scss */
+.alert {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  color: #000;
+  z-index: 45;
+  width: 95%;
+  margin: auto;
+  font-size: 1.3rem;
+}
+/* line 14, ../lib/sass/_alert.scss */
+.alert .title {
+  background-color: #070303;
+  color: #fff;
+  padding: 10px 15px;
+  line-height: 130%;
+}
+/* line 21, ../lib/sass/_alert.scss */
+.alert .message {
+  padding: 10px 15px;
+  line-height: 120%;
+}
+/* line 26, ../lib/sass/_alert.scss */
+.alert button {
+  font-size: 1.1rem;
+  margin: 5px calc(((100% - 95%) + 95% - 50%) / 2) 10px;
+  padding: 5px;
+  background-color: #070303;
+  color: #fff;
+  outline: none;
+  border: none;
+  width: 50%;
+}
+/* line 39, ../lib/sass/_alert.scss */
+.alert-error .title, .alert-error button {
+  background-color: #08EDE0;
+  color: #000;
+}
+/* line 45, ../lib/sass/_alert.scss */
+.alert-anounce {
+  text-align: center;
+}
+/* line 48, ../lib/sass/_alert.scss */
+.alert-anounce .title {
+  font-size: 1.1rem;
+  font-weight: thin;
+}
+/* line 53, ../lib/sass/_alert.scss */
+.alert-anounce .message {
+  font-size: 2.3rem;
+}
+
+/* line 59, ../lib/sass/_alert.scss */
+#alert-active {
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 41;
 }
