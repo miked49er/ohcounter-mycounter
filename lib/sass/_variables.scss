@@ -47,6 +47,10 @@ $z-fab-menu: 20;
 $z-hamburger-blur: 31;
 $z-hamburger-menu: 35;
 
+// Alert
+$z-alert-blur: 41;
+$z-alert: 45;
+
 // Animations
 $z-animations: 90;
 
@@ -79,6 +83,7 @@ $secondaryActiveContent: #000;
 $tertiaryActiveContent: #000;
 
 $blur: rgba(#000,.75);
+$alert-blur: rgba(#000, .3);
 $overlay: #fff;
 $tooltip-color: rgba(#2f2f2f, 0.8);
 $tooltip-text: #fff;
@@ -149,6 +154,16 @@ $player-tab-margin: -4px;
 
 // Spacing
 $spacing-offset: 40%;
+
+// Alert
+$alert-error-bg: #08EDE0;
+$alert-error-color: #000;
+$alert-width: 95%;
+$alert-button-width: 50%;
+$alert-title-padding: 10px 15px;
+$alert-message-padding: 10px 15px;
+$alert-button-padding: 5px;
+$alert-button-margin: 5px calc(((100% - #{$alert-width}) + #{$alert-width} - #{$alert-button-width}) / 2) 10px;
 
 /* $default-transition-property: all;
 $default-transition-duration: 1s;
