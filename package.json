@@ -2,6 +2,11 @@
     "name": "ohcounter-mycounter",
     "version": "0.0.0",
     "private": true,
+    "scripts": {
+      "dev": "grunt dev",
+      "server": "grunt server",
+      "purge": "docker container prune"
+    },
     "dependencies": {
       "grunt": "^1.0.1",
       "grunt-contrib-compass": "^1.1.1",
