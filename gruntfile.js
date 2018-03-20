@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       options: {
         beautify : true, //Makes code readable so that the debugger can be used
         mangle: {
-          except: [
+          reserved: [
             '$timeout',
             '$eval'
           ]
