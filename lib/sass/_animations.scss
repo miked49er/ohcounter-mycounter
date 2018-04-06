@@ -29,24 +29,48 @@
 } // show
 
 .circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  @extend %expanded-shape;
   border-radius: 100%;
-  transform: scale(0);
-  z-index: $z-animations;
-  opacity: 0;
-  background-color: $overlay;
 } // circle
 
+.circle-small {
+  @extend %expanded-shape;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: $small-circle-overlay;
+  height: $small-circle-overlay;
+  margin: auto;
+  background-color: $secondary;
+  border-radius: 100%;
+} // circle-small
+
 .circle.opened {
-  @include transition;
-  transition-duration: .5s;
-  transform: scale(1.05);
-  opacity: .3;
+  @extend %expanded-shape-opened;
 } // circle.opened
+
+.circle-small.opened {
+  @extend %expanded-shape-opened;
+}
+
+.rounded-rectangle {
+  @extend %expanded-shape;
+  border-radius: $button-round-radius;
+} // rounded-rectangle
+
+.rounded-rectangle.opened {
+  @extend %expanded-shape-opened;
+} // rounded-rectangle.opened
+
+.rectangle {
+  @extend %expanded-shape;
+  position: relative;
+} // rectangle
+
+.rectangle.opened {
+  @extend %expanded-shape-opened;
+} // rectangle.opened
 
 .spinLeft {
   transform: rotate(-135deg);
