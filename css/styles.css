@@ -1,4 +1,4 @@
-/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -131,7 +131,7 @@ h2 {
   margin-bottom: .6rem;
 }
 
-/* line 21, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../var/lib/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -144,7 +144,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../var/lib/gems/2.1.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 body:after {
   content: " ";
   display: block;
@@ -252,53 +252,106 @@ body:after {
 }
 /* line 50, ../lib/sass/_partials.scss */
 .horizontal-selection .horizontal-selection-input input[type=radio]:checked + label, .vertical-selection .vertical-selection-input input[type=radio]:checked + label, .horizontal-name-selection .item input[type=radio]:checked + label {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  transition-timing-function: linear;
+  transition-duration: 0.25s;
   color: #f7121f;
   background: #fff;
 }
-/* line 55, ../lib/sass/_partials.scss */
+/* line 58, ../lib/sass/_partials.scss */
 .horizontal-selection .horizontal-selection-input label + input[type=radio] + label, .vertical-selection .vertical-selection-input label + input[type=radio] + label, .horizontal-name-selection .item label + input[type=radio] + label {
   border-left: solid 3px #fff;
 }
-/* line 59, ../lib/sass/_partials.scss */
+/* line 62, ../lib/sass/_partials.scss */
 .horizontal-selection .horizontal-selection-input input[type=checkbox]:checked + label, .vertical-selection .vertical-selection-input input[type=checkbox]:checked + label, .horizontal-name-selection .item input[type=checkbox]:checked + label {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  transition-timing-function: linear;
+  transition-duration: 0.25s;
   color: #f7121f;
   background: #fff;
   border-right: solid thin #f7121f;
   border-bottom: solid thin #f7121f;
   border-style: groove;
 }
-/* line 67, ../lib/sass/_partials.scss */
+/* line 73, ../lib/sass/_partials.scss */
 .horizontal-selection .horizontal-selection-input label + input[type=checkbox] + label, .vertical-selection .vertical-selection-input label + input[type=checkbox] + label, .horizontal-name-selection .item label + input[type=checkbox] + label {
   border-left: solid 3px #fff;
 }
-/* line 71, ../lib/sass/_partials.scss */
+/* line 77, ../lib/sass/_partials.scss */
 .horizontal-selection .horizontal-selection-input .item + .item, .vertical-selection .vertical-selection-input .item + .item, .horizontal-name-selection .item .item + .item {
   border-left: solid 3px #fff;
 }
 
-/* line 76, ../lib/sass/_partials.scss */
+/* line 82, ../lib/sass/_partials.scss */
 .primary, .secondary, .tertiary {
   background-color: #fff;
   color: #f7121f;
   border-bottom: solid medium #f7121f;
 }
 
-/* line 82, ../lib/sass/_partials.scss */
+/* line 88, ../lib/sass/_partials.scss */
 .loss, .gain {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  transition-duration: .1s;
+  transition-timing-function: ease-in;
   width: 40%;
   font-size: 1.8rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  clip-path: circle(35% at 50% 50%);
+}
+/* line 100, ../lib/sass/_partials.scss */
+.loss:active, .gain:active {
+  background-color: #f7121f;
+  color: #fff;
+  clip-path: circle(47% at 50% 50%);
 }
 
-/* line 87, ../lib/sass/_partials.scss */
+/* line 107, ../lib/sass/_partials.scss */
 .loss::before, .gain::after {
   font-size: .8rem;
   vertical-align: middle;
   color: inherit;
 }
 
-/* line 93, ../lib/sass/_partials.scss */
+/* line 113, ../lib/sass/_partials.scss */
 .primary .value-group, .secondary .value-group {
   margin: auto;
+}
+
+/* line 118, ../lib/sass/_partials.scss */
+.circle, .circle-small, .rounded-rectangle, .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  z-index: 90;
+  opacity: 0;
+  background-color: #fff;
+}
+
+/* line 130, ../lib/sass/_partials.scss */
+.circle.opened, .circle-small.opened, .rounded-rectangle.opened, .rectangle.opened {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  transition-duration: .5s;
+  transform: scale(1.05);
+  opacity: .3;
 }
 
 /* line 1, ../lib/sass/_animations.scss */
@@ -340,36 +393,39 @@ body:after {
 
 /* line 31, ../lib/sass/_animations.scss */
 .circle {
-  position: absolute;
+  border-radius: 100%;
+}
+
+/* line 36, ../lib/sass/_animations.scss */
+.circle-small {
+  display: block;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background-color: #f7121f;
   border-radius: 100%;
-  transform: scale(0);
-  z-index: 90;
-  opacity: 0;
-  background-color: #fff;
 }
 
-/* line 44, ../lib/sass/_animations.scss */
-.circle.opened {
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  transition-duration: .5s;
-  transform: scale(1.05);
-  opacity: .3;
+/* line 57, ../lib/sass/_animations.scss */
+.rounded-rectangle {
+  border-radius: 10px;
 }
 
-/* line 51, ../lib/sass/_animations.scss */
+/* line 66, ../lib/sass/_animations.scss */
+.rectangle {
+  position: relative;
+}
+
+/* line 75, ../lib/sass/_animations.scss */
 .spinLeft {
   transform: rotate(-135deg);
   transition-duration: .5s;
 }
 
-/* line 56, ../lib/sass/_animations.scss */
+/* line 80, ../lib/sass/_animations.scss */
 .spinRight {
   transform: rotate(0deg);
   transition-duration: .5s;
@@ -685,6 +741,12 @@ header .menu-button {
 
 /* line 1, ../lib/sass/_button.scss */
 .rounded-button {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  transition-timing-function: ease-out;
+  transition-duration: 0.25s;
   display: block;
   width: 100px;
   height: 35px;
@@ -694,35 +756,35 @@ header .menu-button {
   font-size: 1rem;
   cursor: pointer;
 }
-/* line 11, ../lib/sass/_button.scss */
+/* line 14, ../lib/sass/_button.scss */
 .rounded-button.primaryContent {
   border-color: #fff;
   background-color: #070303;
   color: #fff;
 }
-/* line 16, ../lib/sass/_button.scss */
+/* line 19, ../lib/sass/_button.scss */
 .rounded-button.primaryContent:active {
   background-color: #fff;
   color: #070303;
 }
-/* line 22, ../lib/sass/_button.scss */
+/* line 25, ../lib/sass/_button.scss */
 .rounded-button.secondaryContent {
   border-color: #fff;
   background-color: #f7121f;
   color: #fff;
 }
-/* line 27, ../lib/sass/_button.scss */
+/* line 30, ../lib/sass/_button.scss */
 .rounded-button.secondaryContent:active {
   background-color: #fff;
   color: #f7121f;
 }
-/* line 33, ../lib/sass/_button.scss */
+/* line 36, ../lib/sass/_button.scss */
 .rounded-button.tertiaryContent {
   border-color: #000;
   background-color: #fff;
   color: #000;
 }
-/* line 38, ../lib/sass/_button.scss */
+/* line 41, ../lib/sass/_button.scss */
 .rounded-button.tertiaryContent:active {
   background-color: #000;
   color: #fff;
@@ -1006,27 +1068,28 @@ header .menu-button {
   outline: none;
   border: none;
   width: 50%;
+  cursor: pointer;
 }
-/* line 39, ../lib/sass/_alert.scss */
+/* line 40, ../lib/sass/_alert.scss */
 .alert-error .title, .alert-error button {
   background-color: #08EDE0;
   color: #000;
 }
-/* line 45, ../lib/sass/_alert.scss */
+/* line 46, ../lib/sass/_alert.scss */
 .alert-anounce {
   text-align: center;
 }
-/* line 48, ../lib/sass/_alert.scss */
+/* line 49, ../lib/sass/_alert.scss */
 .alert-anounce .title {
   font-size: 1.1rem;
   font-weight: thin;
 }
-/* line 53, ../lib/sass/_alert.scss */
+/* line 54, ../lib/sass/_alert.scss */
 .alert-anounce .message {
   font-size: 2.3rem;
 }
 
-/* line 59, ../lib/sass/_alert.scss */
+/* line 60, ../lib/sass/_alert.scss */
 #alert-active {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 41;
