@@ -48,6 +48,9 @@
   } // label
 
   input[type=radio]:checked + label{
+    @include transition;
+    transition-timing-function: linear;
+    transition-duration: $fade-timing;
     color: $secondary;
     background: $radio-group-color;
   } // input[type=radio]:checked + label
@@ -57,6 +60,9 @@
   } // label + input[type=radio] + label
 
   input[type=checkbox]:checked + label{
+    @include transition;
+    transition-timing-function: linear;
+    transition-duration: $fade-timing;
     color: $secondary;
     background: $radio-group-color;
     border-right: solid thin $secondary;
@@ -80,8 +86,22 @@
 } // counter
 
 %increment {
+  @include transition;
+  transition-duration: .1s;
+  transition-timing-function: ease-in;
   width: $increment-full;
   font-size: $increment-font-size;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  clip-path: circle(35.0% at 50% 50%);
+
+  &:active {
+    background-color: $secondary;
+    color: $secondaryContent;
+    clip-path: circle(47.0% at 50% 50%);
+  } // increment:active
 } // increment
 
 %increment-ba {
@@ -94,3 +114,22 @@
     // width: 20%;
     margin: auto;
 } // increment-value-group
+
+%expanded-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  z-index: $z-animations;
+  opacity: 0;
+  background-color: $overlay;
+} // expanded-shape
+
+%expanded-shape-opened {
+  @include transition;
+  transition-duration: .5s;
+  transform: scale(1.05);
+  opacity: .3;
+} // expanded-shape-opened
