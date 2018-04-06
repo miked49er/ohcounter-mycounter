@@ -165,6 +165,10 @@ $alert-message-padding: 10px 15px;
 $alert-button-padding: 5px;
 $alert-button-margin: 5px calc(((100% - #{$alert-width}) + #{$alert-width} - #{$alert-button-width}) / 2) 10px;
 
+// Animations ==========================
+$fade-timing: .25s;
+$small-circle-overlay: 40px;
+
 /* $default-transition-property: all;
 $default-transition-duration: 1s;
 $default-transition-timing-function: ease-in-out;
