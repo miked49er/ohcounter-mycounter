@@ -1,4 +1,7 @@
 .rounded-button {
+  @include transition;
+  transition-timing-function: ease-out;
+  transition-duration: $fade-timing;
   display: block;
   width: $button-round-width;
   height: $button-round-height;
