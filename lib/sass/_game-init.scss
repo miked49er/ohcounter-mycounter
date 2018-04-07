@@ -11,6 +11,18 @@
   left: 0;
   z-index: $z-base;
   background-color: $group-background-color;
+
+  @include susy-breakpoint($small) {
+    padding: $group-small-padding;
+  }; // small
+
+  @include susy-breakpoint($medium) {
+    padding: $group-medium-padding;
+  }; // medium
+
+  @include susy-breakpoint($large) {
+    padding: $group-large-padding;
+  }; // large
 } // group
 
 .player-names {

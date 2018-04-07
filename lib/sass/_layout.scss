@@ -14,9 +14,9 @@ $susy: (
 @include layout($susy);
 @include border-box-sizing;
 
-$small             : 30em;
+$small             : 28em;
 $medium            : 39em;
-$large             : 70em;
+$large             : 66em;
 
 body {
   @include container;
@@ -24,6 +24,14 @@ body {
 
 #content {
     margin-top: $toolbar-height;
+
+    @include susy-breakpoint($medium) {
+      padding: $content-medium-padding;
+    }; // medium
+
+    @include susy-breakpoint($large) {
+      padding: $content-large-padding;
+    }; // large
 } // content
 
 .hide {

@@ -20,21 +20,38 @@ header {
     position: absolute;
     top: 0;
     z-index: $z-hamburger-menu;
-    width: 90%;
+    width: $menu-width;
     height: 100vh;
     background-color: $tertiary;
+
+    @include susy-breakpoint($small) {
+      width: $menu-small-width;
+    }; // small
+
+    @include susy-breakpoint($medium) {
+      width: $menu-medium-width;
+    }; // medium
+
+    @include susy-breakpoint($large) {
+      width: $menu-large-width;
+    }; // large
 
     a {
       display: block;
       width: 100%;
-      font-size: 1.5rem;
-      line-height: 150%;
+      font-size: $menu-font;
+      line-height: $menu-line-height;
       vertical-align: middle;
       text-decoration: none;
       color: $secondaryContent;
       background-color: $secondary;
       padding-left: 10px;
       border-bottom: solid 2px $tertiary;
+
+      @include susy-breakpoint($medium) {
+        font-size: $menu-font;
+        line-height: $menu-medium-line-height;
+      }; // medium
     } // a
 } // menu
 
