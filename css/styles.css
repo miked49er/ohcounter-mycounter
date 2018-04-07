@@ -155,8 +155,20 @@ body:after {
 #content {
   margin-top: 50px;
 }
+@media (min-width: 39em) {
+  /* line 25, ../lib/sass/_layout.scss */
+  #content {
+    padding: 0 10%;
+  }
+}
+@media (min-width: 66em) {
+  /* line 25, ../lib/sass/_layout.scss */
+  #content {
+    padding: 0 25%;
+  }
+}
 
-/* line 29, ../lib/sass/_layout.scss */
+/* line 37, ../lib/sass/_layout.scss */
 .hide {
   display: none !important;
 }
@@ -532,12 +544,30 @@ header .menu-button {
   height: 100vh;
   background-color: #fff;
 }
-/* line 27, ../lib/sass/_nav.scss */
+@media (min-width: 28em) {
+  /* line 17, ../lib/sass/_nav.scss */
+  #menu {
+    width: 80%;
+  }
+}
+@media (min-width: 39em) {
+  /* line 17, ../lib/sass/_nav.scss */
+  #menu {
+    width: 60%;
+  }
+}
+@media (min-width: 66em) {
+  /* line 17, ../lib/sass/_nav.scss */
+  #menu {
+    width: 30%;
+  }
+}
+/* line 39, ../lib/sass/_nav.scss */
 #menu a {
   display: block;
   width: 100%;
-  font-size: 1.5rem;
-  line-height: 150%;
+  font-size: 1.7rem;
+  line-height: 180%;
   vertical-align: middle;
   text-decoration: none;
   color: #fff;
@@ -545,14 +575,21 @@ header .menu-button {
   padding-left: 10px;
   border-bottom: solid 2px #fff;
 }
+@media (min-width: 39em) {
+  /* line 39, ../lib/sass/_nav.scss */
+  #menu a {
+    font-size: 1.7rem;
+    line-height: 150%;
+  }
+}
 
-/* line 41, ../lib/sass/_nav.scss */
+/* line 58, ../lib/sass/_nav.scss */
 #menu-active {
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 31;
 }
 
-/* line 47, ../lib/sass/_nav.scss */
+/* line 64, ../lib/sass/_nav.scss */
 .logo {
   display: block;
   padding: 10px 15px;
@@ -826,25 +863,43 @@ header .menu-button {
   z-index: 1;
   background-color: #f7121f;
 }
+@media (min-width: 28em) {
+  /* line 1, ../lib/sass/_game-init.scss */
+  .group {
+    padding: 0 20%;
+  }
+}
+@media (min-width: 39em) {
+  /* line 1, ../lib/sass/_game-init.scss */
+  .group {
+    padding: 0 30%;
+  }
+}
+@media (min-width: 66em) {
+  /* line 1, ../lib/sass/_game-init.scss */
+  .group {
+    padding: 0 35%;
+  }
+}
 
-/* line 16, ../lib/sass/_game-init.scss */
+/* line 28, ../lib/sass/_game-init.scss */
 .player-names {
   display: block;
   text-align: center;
 }
-/* line 20, ../lib/sass/_game-init.scss */
+/* line 32, ../lib/sass/_game-init.scss */
 .player-names .player-name {
   margin: auto;
   margin-bottom: .3rem;
   overflow: hidden;
 }
-/* line 25, ../lib/sass/_game-init.scss */
+/* line 37, ../lib/sass/_game-init.scss */
 .player-names .player-name label {
   color: #fff;
   font-size: 1.3rem;
   float: left;
 }
-/* line 31, ../lib/sass/_game-init.scss */
+/* line 43, ../lib/sass/_game-init.scss */
 .player-names .player-name input {
   background-color: #f7121f;
   color: #fff;
