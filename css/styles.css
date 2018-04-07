@@ -431,6 +431,25 @@ body:after {
   transition-duration: .5s;
 }
 
+/* line 85, ../lib/sass/_animations.scss */
+.grow-shrink-base {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  transition-duration: .1s;
+}
+
+/* line 91, ../lib/sass/_animations.scss */
+.shrink h1, .shrink h2, .shrink h3, .shrink h4, .shrink h5, .shrink h6 {
+  font-size: .5rem !important;
+}
+
+/* line 97, ../lib/sass/_animations.scss */
+.grow h1, .grow h2, .grow h3, .grow h4, .grow h5, .grow h6 {
+  font-size: 3rem !important;
+}
+
 /* line 1, ../lib/sass/_tooltip.scss */
 .tooltip .tooltiptext {
   -moz-box-shadow: 1px 2px 5px #333333;
@@ -876,15 +895,28 @@ header .menu-button {
   display: inline-block;
   margin: 10px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transform: scale(1);
 }
-/* line 36, ../lib/sass/_dice.scss */
+/* line 40, ../lib/sass/_dice.scss */
+.dice:active {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  transition-duration: .1s;
+  transform: scale(1.3);
+}
+/* line 46, ../lib/sass/_dice.scss */
 .dice .dice-text {
   fill: #000;
   font-size: 300px;
   line-height: 100%;
 }
 
-/* line 44, ../lib/sass/_dice.scss */
+/* line 54, ../lib/sass/_dice.scss */
 .coin {
   fill: #fff;
   font-family: Marvel, Sans-Serif;
@@ -893,8 +925,21 @@ header .menu-button {
   display: block;
   margin: 10px auto;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transform: scale(1);
 }
-/* line 53, ../lib/sass/_dice.scss */
+/* line 67, ../lib/sass/_dice.scss */
+.coin:active {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  transition-duration: .1s;
+  transform: scale(1.3);
+}
+/* line 73, ../lib/sass/_dice.scss */
 .coin .coin-text {
   fill: #000;
   font-size: 250px;
