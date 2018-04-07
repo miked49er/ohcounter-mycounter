@@ -91,8 +91,22 @@ $radio-group-color: $secondaryContent;
 
 // Sizes =======================================
 
+// Content
+$content-medium-padding: 0 10%;
+$content-large-padding: 0 25%;
+
 // Toolbar
 $toolbar-height: 50px;
+
+// Menu
+$menu-width: 90%;
+$menu-small-width: 80%;
+$menu-medium-width: 60%;
+$menu-large-width: 30%;
+$menu-font: 1.7rem;
+$menu-medium-font: 1.5rem;
+$menu-line-height: 180%;
+$menu-medium-line-height: 150%;
 
 // Fab
 $fab: 40px;
@@ -114,6 +128,9 @@ $group-background-color: $secondary;
 $group-width: 100%;
 $group-margin: 10px auto;
 $group-padding: 0 5%;
+$group-small-padding: 0 20%;
+$group-medium-padding: 0 30%;
+$group-large-padding: 0 35%;
 $group-height: 100vh;
 
 // Radio Groups
