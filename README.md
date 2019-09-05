@@ -6,4 +6,4 @@ The last counter you will ever need
 2. **Sam Groom**- Documentatation Lead :metal:
 3. **Phil**- Lead Programmer
 4. **Matheus**- UI/UX Design
-5. **Weston Armstrong**- Team Manager, Data Modeler :muscle:
+5. **Weston Armstrong**- Team Manager, Data Modeler :muscle: :muscle: 
